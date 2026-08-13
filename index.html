@@ -4,69 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My Portfolio</title>
+
+    <meta name="description"
+          content="Personal portfolio website of Sneha Dhakal">
+
+    <title>Home | Sneha Dhakal</title>
+
     <link rel="stylesheet" href="file.css">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="project.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="sitereport.html">Site Report</a>
-    </nav>
-</header>
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
 
-<main>
+    <header class="site-header">
 
-    <section class="home-hero">
+        <nav aria-label="Main navigation">
 
-        <div class="home-image">
-   
+            <a href="index.html" class="logo">
+                Sneha Dhakal
+            </a>
 
-    <img src="images/profile.png" alt="Portrait of Sneha Dhakal">
-</div>
+            <div class="nav-links">
 
-        <div class="home-content">
+                <a href="index.html">Home</a>
 
-            <p class="intro">WELCOME TO MY PORTFOLIO</p>
+                <a href="project.html">Projects</a>
 
-            <h1>Hello, I'm<br>
-                <span>Sneha Dhakal</span>
-            </h1>
+                <a href="skills.html">Skills</a>
 
-            <h2>Computer Science Student & Web Developer</h2>
+                <a href="blog.html">Blog</a>
 
-            <p class="description">
-                I am a Computer Science student interested in web development,
-                technology and creative digital design. This portfolio showcases
-                my projects, skills and learning journey throughout my
-                web development module.
-            </p>
+                <a href="contact.html">Contact</a>
 
-            <div class="home-buttons">
-                <a href="project.html" class="main-button">
-                    View My Projects
-                </a>
+                <a href="sitereport.html">Site Report</a>
 
-                <a href="contact.html" class="outline-button">
-                    Contact Me
-                </a>
             </div>
 
-        </div>
+        </nav>
 
-    </section>
+    </header>
 
-</main>
 
-<footer>
-    <p>&copy; 2026 Sneha Dhakal | My Portfolio</p>
-</footer>
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero">
+
+            <!-- LEFT SIDE: TEXT -->
+
+            <div class="hero-text">
+
+                <p class="eyebrow">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm Sneha Dhakal
+                </h1>
+
+                <h2>
+                    Computer Science Student &amp;
+                    Aspiring Web Developer
+                </h2>
+
+                <p class="hero-description">
+                    I am a Computer Science student developing my
+                    skills in web development, programming and
+                    problem solving. This portfolio presents my
+                    projects, skills and learning experience.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="project.html" class="button">
+                        View My Projects
+                    </a>
+
+                    <a href="contact.html"
+                       class="button button-outline">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE: IMAGE -->
+
+            <div class="hero-image">
+
+                <img src="images/profile.jpg"
+                     alt="Portrait of Sneha Dhakal">
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section class="about-section">
+
+            <div class="content-width">
+
+                <h2>
+                    About Me
+                </h2>
+
+                <p>
+                    I am studying Computer Science and building my
+                    understanding of web development and programming.
+                    Through practical work, I am learning how to create
+                    structured, accessible and responsive websites.
+                </p>
+
+                <p>
+                    This portfolio was developed using HTML and CSS
+                    without using a website template. It demonstrates
+                    my understanding of page structure, navigation,
+                    responsive layouts and basic version control.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS PREVIEW
+        ========================== -->
+
+        <section class="home-skills">
+
+            <div class="content-width">
+
+                <h2>
+                    What I Am Learning
+                </h2>
+
+                <div class="home-skill-grid">
+
+                    <article class="simple-card">
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <p>
+                            Creating structured and semantic
+                            web pages.
+                        </p>
+
+                    </article>
+
+
+                    <article class="simple-card">
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <p>
+                            Creating layouts, styling pages
+                            and responsive designs.
+                        </p>
+
+                    </article>
+
+
+                    <article class="simple-card">
+
+                        <h3>
+                            Programming
+                        </h3>
+
+                        <p>
+                            Developing logical thinking and
+                            problem-solving skills.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <p class="center-link">
+
+                    <a href="skills.html"
+                       class="text-link">
+                        View my full skills
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Sneha Dhakal. All rights reserved.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>

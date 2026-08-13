@@ -4,96 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My Portfolio</title>
+    <meta name="description" content="Projects created by Sneha Dhakal">
+    <title>Projects | Sneha Dhakal</title>
+
     <link rel="stylesheet" href="file.css">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="project.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="sitereport.html">Site Report</a>
-    </nav>
-</header>
+    <header class="site-header">
 
-<main>
+        <nav aria-label="Main navigation">
 
-            <section class="projects-section">
+            <a href="index.html" class="logo">Sneha Dhakal</a>
 
-    <p class="section-label">MY PROJECTS</p>
-    <h1>What Projects I Have Made</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitereport.html">Site Report</a>
+            </div>
 
-    <div class="projects-grid">
+        </nav>
 
-        <article class="project-card project-one">
+    </header>
 
-    <img src="images/portfolio.jpg"
-         alt="Screenshot of portfolio website">
 
-    <div class="project-content">
-        <h2>Portfolio Website</h2>
+    <main>
+
+        <section class="page-introduction">
+
+            <div class="content-width">
+
+                <p class="eyebrow">MY WORK</p>
+
+                <h1>Projects</h1>
+
+                <p>
+                    These projects demonstrate my learning and development
+                    during my Computer Science studies.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Different grid layout -->
+
+        <section class="projects-section">
+
+            <div class="project-grid">
+
+                <article class="project-card project-large">
+
+                    <div class="project-image">
+                        <img src="images/project1.jpg"
+                             alt="Personal portfolio website project">
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-number">01</p>
+
+                        <h2>Personal Portfolio</h2>
+
+                        <p>
+                           My personal portfolio website is a project that showcases my skills, projects, achievements, and learning journey as a Computer Science student. I designed and developed the website using HTML and CSS, with a focus on creating a clean, responsive, and user-friendly interface. It allows visitors to learn more about me, explore my projects, view my technical skills, and get in touch with me. This project also helps me demonstrate my creativity, web development skills, and continuous growth as a developer.s
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong>
+                            HTML and CSS
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/RescueMS.png"
+                             alt="Web development project">
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-number">02</p>
+
+                        <h2>RescueMS- Zoo Management System</h2>
+
+                        <p>
+                            RescueMS is a web-based Zoo Management System designed to improve the management of animals, visitors, memberships, sponsorships, events, and administrative activities. The system provides a central platform for managing animal records, visitor services, memberships, sponsorship programmes, and bookings. Through this project, I developed my understanding of UI/UX design, system analysis, database concepts, and web application development, while working as part of a team to create a practical solution for modern zoo management.
+                        </p>
+
+                        <p>
+                            <strong>Technologies:</strong>
+                            HTML and CSS
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/Climate Clarity.png "
+                             alt="Programming project">
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-number">03</p>
+
+                        <h2>Climate Clarity</h2>
+
+                        <p>
+                            Programming exercises that helped me improve
+                            logical thinking and problem-solving skills.
+                        </p>
+
+                        <p>
+                            <strong>Technology:</strong>
+                            Programming
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card project-wide">
+
+                    <div class="project-content">
+
+                        <p class="project-number">04</p>
+
+                        <h2>Future Project: AI Career & Study Platform</h2>
+
+                        <p>
+                            The AI Career & Study Platform is a smart web-based system designed to help students plan their education and future careers. It analyses a student’s skills, interests, academic performance, and career goals to recommend suitable career paths, learning resources, projects, and internships. The platform can also provide personalised study plans, quizzes, progress tracking, and AI-powered guidance, helping students make better decisions about their education and professional development.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
 
         <p>
-            A personal portfolio website created using HTML and CSS
-            to showcase my skills and projects.
+            &copy; 2026 Sneha Dhakal. All rights reserved.
         </p>
-    </div>
 
-</article>
-
-        <article class="project-card">
-            <div class="project-icon">🌍</div>
-            <h2>Climate Clarity</h2>
-            <p>
-                Climate information website with responsive design.
-            </p>
-        </article>
-
-        <article class="project-card">
-            <div class="project-icon">🎨</div>
-            <h2>Web Design Project</h2>
-            <p>
-                Focused on layout, typography and navigation.
-            </p>
-        </article>
-
-        <article class="project-card">
-            <div class="project-icon">🚑</div>
-            <h2>Rescue MS Project</h2>
-            <p>
-                User-friendly website demonstrating HTML and CSS skills.
-            </p>
-        </article>
-
-        <article class="project-card">
-            <div class="project-icon">⭐</div>
-            <h2>Future Project</h2>
-            <p>
-                Placeholder for future coursework and portfolio projects.
-            </p>
-        </article>
-
-    </div>
-
-</section>
-        
-
-
-
-       
-
-                
-
-</main>
-
-<footer>
-    <p>&copy; 2026 Sneha Dhakal | My Portfolio</p>
-</footer>
+    </footer>
 
 </body>
+
 </html>

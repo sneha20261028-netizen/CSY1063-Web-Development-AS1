@@ -1,33 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | My Portfolio</title>
+    <meta name="description" content="Web development blog by Sneha Dhakal">
+    <title>Blog | Sneha Dhakal</title>
+
     <link rel="stylesheet" href="file.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="project.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-            <a href="sitereport.html">Site Report</a>
+    <header class="site-header">
+
+        <nav aria-label="Main navigation">
+
+            <a href="index.html" class="logo">Sneha Dhakal</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitereport.html">Site Report</a>
+            </div>
+
         </nav>
+
     </header>
 
+
     <main>
-        <h1>My Blog</h1>
-        <p>This page will contain my web development blog.</p>
+
+        <section class="page-introduction">
+
+            <div class="content-width">
+
+                <p class="eyebrow">LEARNING JOURNAL</p>
+
+                <h1>My Blog</h1>
+
+                <p>
+                    Short reflections about my learning experience in
+                    web development and Computer Science.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="blog-section">
+
+            <div class="content-width">
+
+
+                <article class="blog-post">
+
+                    <img src="images/blog1.jpg"
+                         alt="Computer and web development workspace">
+
+                    <div class="blog-content">
+
+                        <p class="blog-date">August 2026</p>
+
+                        <h2>Starting My Web Development Journey</h2>
+
+                        <p>
+                            Starting web development has helped me understand
+                            how websites are structured. Before learning HTML,
+                            I mainly saw websites from the user's perspective.
+                            Learning HTML helped me understand that every page
+                            has a structure made from elements such as headings,
+                            paragraphs, links and sections.
+                        </p>
+
+                        <p>
+                            I also learned that good website development is
+                            not only about making a page look attractive.
+                            The structure needs to be logical and easy to
+                            navigate. Using semantic elements such as
+                            <code>header</code>, <code>nav</code>,
+                            <code>main</code> and <code>footer</code> has
+                            helped me organise my pages more clearly.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-post">
+
+                    <img src="images/blog2.jpg"
+                         alt="CSS code displayed on a computer screen">
+
+                    <div class="blog-content">
+
+                        <p class="blog-date">August 2026</p>
+
+                        <h2>What I Learned About CSS</h2>
+
+                        <p>
+                            CSS has been one of the most interesting parts
+                            of learning web development. It allows me to
+                            control colours, spacing, typography and layouts.
+                            At first, understanding Flexbox and Grid was
+                            difficult because small changes could affect
+                            the entire page.
+                        </p>
+
+                        <p>
+                            Practising these concepts helped me understand
+                            how layouts work. I also learned about media
+                            queries, which allow a website to adapt to
+                            different screen sizes. Responsive design is
+                            important because users can access websites
+                            from computers, tablets and mobile phones.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="blog-post">
+
+                    <div class="blog-content">
+
+                        <p class="blog-date">August 2026</p>
+
+                        <h2>Learning Through GitHub</h2>
+
+                        <p>
+                            Git and GitHub have helped me understand how
+                            developers keep track of changes to their work.
+                            Making meaningful commits allows me to record
+                            how my portfolio develops over time.
+                        </p>
+
+                        <p>
+                            I have learned that version control is useful
+                            because mistakes can be identified and previous
+                            versions can be reviewed. It also encourages me
+                            to develop my website gradually rather than
+                            making all changes at once.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Sneha Dhakal. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>

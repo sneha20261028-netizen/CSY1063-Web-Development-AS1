@@ -1,33 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | My Portfolio</title>
+    <meta name="description" content="Contact Sneha Dhakal">
+    <title>Contact | Sneha Dhakal</title>
+
     <link rel="stylesheet" href="file.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="project.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-            <a href="sitereport.html">Site Report</a>
+    <header class="site-header">
+
+        <nav aria-label="Main navigation">
+
+            <a href="index.html" class="logo">Sneha Dhakal</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitereport.html">Site Report</a>
+            </div>
+
         </nav>
+
     </header>
 
+
     <main>
-        <h1>Contact Me</h1>
-        <p>This page will contain my contact information and contact form.</p>
+
+        <section class="page-introduction">
+
+            <div class="content-width">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h1>Contact Me</h1>
+
+                <p>
+                    If you would like to get in touch, you can contact me
+                    using the information below or send a message through
+                    the form.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-section">
+
+            <div class="content-width contact-grid">
+
+
+                <div class="contact-information">
+
+                    <h1>Let's Connect with Eachother</h1>
+
+                    <p>
+                        I am interested in learning about web development,
+                        programming and technology.
+                    </p>
+
+                    <div class="contact-detail">
+
+                        <h3>Email</h3>
+
+                        <p>
+                            <a href="mailto:snehadhkal626@gmail.com">
+                                snehadhkal626@gmail.com
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <h3>LinkedIn</h3>
+
+                        <p>
+                            <a href="https://www.linkedin.com/in/sneha-dhakal-ba21b6401/"
+                               target="_blank"
+                               rel="noopener">
+                                LinkedIn Profile
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- The form opens the user's email program -->
+
+                <form class="contact-form"
+                      action="mailto:sneha@example.com"
+                      method="post"
+                      enctype="text/plain">
+
+                    <h2>Send a Message</h2>
+
+                    <label for="name">Name</label>
+
+                    <input type="text"
+                           id="name"
+                           name="Name"
+                           required>
+
+
+                    <label for="email">Email</label>
+
+                    <input type="email"
+                           id="email"
+                           name="Email"
+                           required>
+
+
+                    <label for="subject">Subject</label>
+
+                    <input type="text"
+                           id="subject"
+                           name="Subject"
+                           required>
+
+
+                    <label for="message">Message</label>
+
+                    <textarea id="message"
+                              name="Message"
+                              rows="7"
+                              required></textarea>
+
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Sneha Dhakal. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>
