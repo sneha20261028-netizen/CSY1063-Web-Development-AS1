@@ -2,171 +2,347 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web development blog by Sneha Dhakal">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Blog by Sneha Dhakal about web development and technology">
+
     <title>Blog | Sneha Dhakal</title>
 
     <link rel="stylesheet" href="file.css">
+
 </head>
+
 
 <body>
 
-    <header class="site-header">
 
-        <nav aria-label="Main navigation">
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-            <a href="index.html" class="logo">Sneha Dhakal</a>
+<header class="navbar">
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="project.html">Projects</a>
-                <a href="skills.html">Skills</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="sitereport.html">Site Report</a>
-            </div>
-
-        </nav>
-
-    </header>
+    <div class="logo">
+        SD
+    </div>
 
 
-    <main>
+    <button class="menu-button"
+            onclick="openMenu()"
+            aria-label="Open menu">
 
-        <section class="page-introduction">
+        <span></span>
+        <span></span>
+        <span></span>
 
-            <div class="content-width">
+    </button>
 
-                <p class="eyebrow">LEARNING JOURNAL</p>
-
-                <h1>My Blog</h1>
-
-                <p>
-                    Short reflections about my learning experience in
-                    web development and Computer Science.
-                </p>
-
-            </div>
-
-        </section>
+</header>
 
 
-        <section class="blog-section">
 
-            <div class="content-width">
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
 
+<nav class="side-menu" id="sideMenu">
 
-                <article class="blog-post">
+    <button class="close-button"
+            onclick="closeMenu()"
+            aria-label="Close menu">
 
-                    <img src="images/blog1.jpg"
-                         alt="Computer and web development workspace">
+        &times;
 
-                    <div class="blog-content">
-
-                        <p class="blog-date">August 2026</p>
-
-                        <h2>Starting My Web Development Journey</h2>
-
-                        <p>
-                            Starting web development has helped me understand
-                            how websites are structured. Before learning HTML,
-                            I mainly saw websites from the user's perspective.
-                            Learning HTML helped me understand that every page
-                            has a structure made from elements such as headings,
-                            paragraphs, links and sections.
-                        </p>
-
-                        <p>
-                            I also learned that good website development is
-                            not only about making a page look attractive.
-                            The structure needs to be logical and easy to
-                            navigate. Using semantic elements such as
-                            <code>header</code>, <code>nav</code>,
-                            <code>main</code> and <code>footer</code> has
-                            helped me organise my pages more clearly.
-                        </p>
-
-                    </div>
-
-                </article>
+    </button>
 
 
-                <article class="blog-post">
+    <div class="menu-links">
 
-                    <img src="images/blog2.jpg"
-                         alt="CSS code displayed on a computer screen">
+        <a href="index.html">Home</a>
 
-                    <div class="blog-content">
+        <a href="blog.html">Blog</a>
 
-                        <p class="blog-date">August 2026</p>
+        <a href="project.html">Projects</a>
 
-                        <h2>What I Learned About CSS</h2>
+        <a href="contact.html">Contact</a>
 
-                        <p>
-                            CSS has been one of the most interesting parts
-                            of learning web development. It allows me to
-                            control colours, spacing, typography and layouts.
-                            At first, understanding Flexbox and Grid was
-                            difficult because small changes could affect
-                            the entire page.
-                        </p>
+        <a href="sitereport.html">Site Report</a>
 
-                        <p>
-                            Practising these concepts helped me understand
-                            how layouts work. I also learned about media
-                            queries, which allow a website to adapt to
-                            different screen sizes. Responsive design is
-                            important because users can access websites
-                            from computers, tablets and mobile phones.
-                        </p>
+    </div>
 
-                    </div>
-
-                </article>
+</nav>
 
 
-                <article class="blog-post">
 
-                    <div class="blog-content">
-
-                        <p class="blog-date">August 2026</p>
-
-                        <h2>Learning Through GitHub</h2>
-
-                        <p>
-                            Git and GitHub have helped me understand how
-                            developers keep track of changes to their work.
-                            Making meaningful commits allows me to record
-                            how my portfolio develops over time.
-                        </p>
-
-                        <p>
-                            I have learned that version control is useful
-                            because mistakes can be identified and previous
-                            versions can be reviewed. It also encourages me
-                            to develop my website gradually rather than
-                            making all changes at once.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
+<main>
 
 
-    <footer class="site-footer">
+<!-- =====================================================
+     BLOG HEADER
+===================================================== -->
 
-        <p>
-            &copy; 2026 Sneha Dhakal. All rights reserved.
+<section class="blog-header">
+
+    <p class="blog-label">
+        MY BLOG
+    </p>
+
+    <h1>
+        Learning Web Development
+    </h1>
+
+    <p>
+        My journey of learning HTML, CSS and creating
+        my first responsive websites.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     BLOG ARTICLE
+===================================================== -->
+
+<article class="blog-article">
+
+
+    <!-- BLOG IMAGE -->
+
+    <figure class="blog-image">
+
+        <img src="images/web-development.jpg"
+             alt="Web development workspace">
+
+        <figcaption>
+            Learning and practising web development
+        </figcaption>
+
+    </figure>
+
+
+
+    <!-- BLOG CONTENT -->
+
+    <div class="blog-content">
+
+        <p class="blog-date">
+            14 August 2026
         </p>
 
-    </footer>
+
+        <h2>
+            My Journey Into Web Development
+        </h2>
+
+
+        <p>
+
+            Web development is one of the areas of
+            computer science that I have become increasingly
+            interested in. When I first started learning
+            about websites, I was curious about how a
+            simple webpage could be created using code.
+
+        </p>
+
+
+        <p>
+
+            I started with <strong>HTML</strong>, which helped
+            me understand the basic structure of a webpage.
+            I learned how headings, paragraphs, links,
+            images, lists and other elements are used to
+            organise information.
+
+        </p>
+
+
+        <!-- SECOND IMAGE -->
+
+        <figure class="blog-image small-image">
+
+            <img src="images/html-css.jpg"
+                 alt="HTML and CSS code">
+
+            <figcaption>
+                HTML provides structure while CSS controls presentation.
+            </figcaption>
+
+        </figure>
+
+
+        <h3>
+            Learning HTML and CSS
+        </h3>
+
+
+        <p>
+
+            After learning the basics of HTML, I started
+            learning <strong>CSS</strong>. CSS allowed me to
+            change colours, fonts, spacing, layouts and
+            the overall appearance of my webpages.
+
+        </p>
+
+
+        <p>
+
+            One of the most useful things I have learned
+            is how to use CSS layouts such as
+            <strong>Flexbox</strong> and <strong>Grid</strong>.
+            These tools make it easier to create organised
+            and responsive layouts.
+
+        </p>
+
+
+        <!-- THIRD IMAGE -->
+
+        <figure class="blog-image small-image">
+
+            <img src="images/responsive-design.jpg"
+                 alt="Responsive website design">
+
+            <figcaption>
+                Responsive design allows websites to work on different screen sizes.
+            </figcaption>
+
+        </figure>
+
+
+        <h3>
+            Why Responsive Design Matters
+        </h3>
+
+
+        <p>
+
+            Modern websites are viewed on many different
+            devices, including desktop computers, tablets
+            and mobile phones. Because of this, a website
+            should be easy to use regardless of the screen
+            size.
+
+        </p>
+
+
+        <p>
+
+            Using responsive CSS and media queries allows
+            the layout to adapt to different devices. This
+            is something I am continuing to practise while
+            developing my portfolio website.
+
+        </p>
+
+
+        <h3>
+            What I Have Learned
+        </h3>
+
+
+        <p>
+
+            Building websites has taught me that good
+            development is not only about writing code.
+            A successful website should also be accessible,
+            organised, visually appealing and easy to
+            navigate.
+
+        </p>
+
+
+        <p>
+
+            I am still developing my skills, but every
+            project gives me an opportunity to learn
+            something new. My goal is to continue improving
+            my knowledge of web development and eventually
+            create more advanced and interactive websites.
+
+        </p>
+
+
+    </div>
+
+</article>
+
+
+
+<!-- =====================================================
+     BLOG CONCLUSION
+===================================================== -->
+
+<section class="blog-conclusion">
+
+    <h2>
+        Final Thoughts
+    </h2>
+
+    <p>
+
+        Learning web development has been a challenging
+        but enjoyable experience. From writing my first
+        HTML page to designing a complete portfolio,
+        I have gained a better understanding of how
+        websites are planned, developed and presented.
+
+    </p>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Sneha Dhakal |
+        Computer Science Student & Web Developer
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function openMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.add("active");
+
+}
+
+
+function closeMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.remove("active");
+
+}
+
+</script>
+
 
 </body>
 

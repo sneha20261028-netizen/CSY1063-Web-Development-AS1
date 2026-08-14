@@ -2,162 +2,422 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Sneha Dhakal">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Sneha Dhakal">
+
     <title>Contact | Sneha Dhakal</title>
 
     <link rel="stylesheet" href="file.css">
+
 </head>
+
 
 <body>
 
-    <header class="site-header">
 
-        <nav aria-label="Main navigation">
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-            <a href="index.html" class="logo">Sneha Dhakal</a>
+<header class="navbar">
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="project.html">Projects</a>
-                <a href="skills.html">Skills</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="sitereport.html">Site Report</a>
-            </div>
-
-        </nav>
-
-    </header>
+    <a href="index.html" class="logo">
+        SD
+    </a>
 
 
-    <main>
+    <button class="menu-button"
+            onclick="openMenu()"
+            aria-label="Open menu">
 
-        <section class="page-introduction">
+        <span></span>
+        <span></span>
+        <span></span>
 
-            <div class="content-width">
+    </button>
 
-                <p class="eyebrow">GET IN TOUCH</p>
-
-                <h1>Contact Me</h1>
-
-                <p>
-                    If you would like to get in touch, you can contact me
-                    using the information below or send a message through
-                    the form.
-                </p>
-
-            </div>
-
-        </section>
+</header>
 
 
-        <section class="contact-section">
 
-            <div class="content-width contact-grid">
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
 
+<nav class="side-menu" id="sideMenu">
 
-                <div class="contact-information">
+    <button class="close-button"
+            onclick="closeMenu()"
+            aria-label="Close menu">
 
-                    <h1>Let's Connect with Eachother</h1>
+        &times;
 
-                    <p>
-                        I am interested in learning about web development,
-                        programming and technology.
-                    </p>
-
-                    <div class="contact-detail">
-
-                        <h3>Email</h3>
-
-                        <p>
-                            <a href="mailto:snehadhkal626@gmail.com">
-                                snehadhkal626@gmail.com
-                            </a>
-                        </p>
-
-                    </div>
+    </button>
 
 
-                    <div class="contact-detail">
+    <div class="menu-links">
 
-                        <h3>LinkedIn</h3>
+        <a href="index.html">
+            Home
+        </a>
 
-                        <p>
-                            <a href="https://www.linkedin.com/in/sneha-dhakal-ba21b6401/"
-                               target="_blank"
-                               rel="noopener">
-                                LinkedIn Profile
-                            </a>
-                        </p>
+        <a href="blog.html">
+            Blog
+        </a>
 
-                    </div>
+        <a href="project.html">
+            Projects
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <a href="sitereport.html">
+            Site Report
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     CONTACT HERO
+===================================================== -->
+
+<section class="contact-hero">
+
+    <div class="contact-hero-content">
+
+        <span class="page-label">
+            GET IN TOUCH
+        </span>
+
+        <h1>
+            Let's work together.
+        </h1>
+
+        <p>
+            If you have a question, project idea or simply
+            want to connect, feel free to send me a message.
+            I would be happy to hear from you.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT AREA
+===================================================== -->
+
+<section class="contact-main">
+
+    <div class="contact-wrapper">
+
+
+        <!-- =================================================
+             CONTACT INFORMATION
+        ================================================= -->
+
+        <div class="contact-information">
+
+            <span class="contact-label">
+                CONTACT INFORMATION
+            </span>
+
+
+            <h2>
+                Let's start a conversation.
+            </h2>
+
+
+            <p>
+                I am currently studying Computer Science and
+                developing my skills in web development,
+                programming and user interface design.
+                If you would like to discuss my work or
+                connect with me, please get in touch.
+            </p>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    @
+                </div>
+
+                <div>
+
+                    <span>
+                        Email
+                    </span>
+
+                    <a href="mailto:snehadhakal@example.com">
+                        snehadhakal@example.com
+                    </a>
 
                 </div>
 
+            </div>
 
-                <!-- The form opens the user's email program -->
 
-                <form class="contact-form"
-                      action="mailto:sneha@example.com"
-                      method="post"
-                      enctype="text/plain">
+            <!-- LOCATION -->
 
-                    <h2>Send a Message</h2>
+            <div class="contact-item">
 
-                    <label for="name">Name</label>
+                <div class="contact-icon">
+                    ◉
+                </div>
+
+                <div>
+
+                    <span>
+                        Location
+                    </span>
+
+                    <p>
+                        Nepal
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="social-area">
+
+                <span>
+                    FIND ME ONLINE
+                </span>
+
+                <div class="social-links">
+
+                    <a href="#"
+                       aria-label="LinkedIn">
+                        in
+                    </a>
+
+                    <a href="#"
+                       aria-label="GitHub">
+                        G
+                    </a>
+
+                    <a href="#"
+                       aria-label="Instagram">
+                        ◎
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CONTACT FORM
+        ================================================= -->
+
+        <div class="contact-form-box">
+
+            <span class="contact-label">
+                SEND A MESSAGE
+            </span>
+
+
+            <h2>
+                Contact Me
+            </h2>
+
+
+            <!--
+                MAILTO FORM
+
+                This opens the user's email program.
+                No PHP/server-side language is required.
+            -->
+
+            <form action="mailto:snehadhakal@example.com"
+                  method="post"
+                  enctype="text/plain">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
 
                     <input type="text"
                            id="name"
                            name="Name"
+                           placeholder="Enter your name"
                            required>
 
+                </div>
 
-                    <label for="email">Email</label>
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Your Email
+                    </label>
 
                     <input type="email"
                            id="email"
                            name="Email"
+                           placeholder="Enter your email"
                            required>
 
+                </div>
 
-                    <label for="subject">Subject</label>
+
+                <!-- SUBJECT -->
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
 
                     <input type="text"
                            id="subject"
                            name="Subject"
+                           placeholder="Enter subject"
                            required>
 
+                </div>
 
-                    <label for="message">Message</label>
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
 
                     <textarea id="message"
                               name="Message"
-                              rows="7"
+                              rows="6"
+                              placeholder="Write your message here..."
                               required></textarea>
 
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
+                </div>
 
 
-    <footer class="site-footer">
+                <!-- SUBMIT -->
 
-        <p>
-            &copy; 2026 Sneha Dhakal. All rights reserved.
-        </p>
+                <button type="submit"
+                        class="send-button">
 
-    </footer>
+                    Send Message →
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT CTA
+===================================================== -->
+
+<section class="contact-cta">
+
+    <div>
+
+        <span>
+            HAVE A PROJECT IN MIND?
+        </span>
+
+        <h2>
+            Let's create something meaningful.
+        </h2>
+
+        <a href="mailto:snehadhakal@example.com">
+            Email Me →
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Sneha Dhakal |
+        Computer Science Student & Web Developer
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     MENU JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function openMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.add("active");
+
+}
+
+
+function closeMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.remove("active");
+
+}
+
+</script>
+
 
 </body>
 

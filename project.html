@@ -3,8 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects created by Sneha Dhakal">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Sneha Dhakal's portfolio projects">
+
     <title>Projects | Sneha Dhakal</title>
 
     <link rel="stylesheet" href="file.css">
@@ -12,164 +17,359 @@
 
 <body>
 
-    <header class="site-header">
+<!-- NAVIGATION -->
 
-        <nav aria-label="Main navigation">
+<header class="navbar">
 
-            <a href="index.html" class="logo">Sneha Dhakal</a>
+    <a href="index.html" class="logo">
+        SD
+    </a>
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="project.html">Projects</a>
-                <a href="skills.html">Skills</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="sitereport.html">Site Report</a>
-            </div>
+    <button class="menu-button"
+            onclick="openMenu()"
+            aria-label="Open menu">
 
-        </nav>
+        <span></span>
+        <span></span>
+        <span></span>
 
-    </header>
+    </button>
 
-
-    <main>
-
-        <section class="page-introduction">
-
-            <div class="content-width">
-
-                <p class="eyebrow">MY WORK</p>
-
-                <h1>Projects</h1>
-
-                <p>
-                    These projects demonstrate my learning and development
-                    during my Computer Science studies.
-                </p>
-
-            </div>
-
-        </section>
+</header>
 
 
-        <!-- Different grid layout -->
+<!-- SIDE MENU -->
 
-        <section class="projects-section">
+<nav class="side-menu" id="sideMenu">
 
-            <div class="project-grid">
+    <button class="close-button"
+            onclick="closeMenu()">
+        &times;
+    </button>
 
-                <article class="project-card project-large">
+    <div class="menu-links">
 
-                    <div class="project-image">
-                        <img src="images/project1.jpg"
-                             alt="Personal portfolio website project">
-                    </div>
+        <a href="index.html">Home</a>
 
-                    <div class="project-content">
+        <a href="blog.html">Blog</a>
 
-                        <p class="project-number">01</p>
+        <a href="project.html">Projects</a>
 
-                        <h2>Personal Portfolio</h2>
+        <a href="contact.html">Contact</a>
 
-                        <p>
-                           My personal portfolio website is a project that showcases my skills, projects, achievements, and learning journey as a Computer Science student. I designed and developed the website using HTML and CSS, with a focus on creating a clean, responsive, and user-friendly interface. It allows visitors to learn more about me, explore my projects, view my technical skills, and get in touch with me. This project also helps me demonstrate my creativity, web development skills, and continuous growth as a developer.s
-                        </p>
+        <a href="sitereport.html">Site Report</a>
 
-                        <p>
-                            <strong>Technologies:</strong>
-                            HTML and CSS
-                        </p>
+    </div>
 
-                    </div>
-
-                </article>
+</nav>
 
 
-                <article class="project-card">
+<main>
 
-                    <div class="project-image">
-                        <img src="images/RescueMS.png"
-                             alt="Web development project">
-                    </div>
+    <!-- PAGE INTRO -->
 
-                    <div class="project-content">
+    <section class="projects-hero">
 
-                        <p class="project-number">02</p>
+        <div class="projects-hero-content">
 
-                        <h2>RescueMS- Zoo Management System</h2>
+            <span class="page-label">
+                MY PORTFOLIO
+            </span>
 
-                        <p>
-                            RescueMS is a web-based Zoo Management System designed to improve the management of animals, visitors, memberships, sponsorships, events, and administrative activities. The system provides a central platform for managing animal records, visitor services, memberships, sponsorship programmes, and bookings. Through this project, I developed my understanding of UI/UX design, system analysis, database concepts, and web application development, while working as part of a team to create a practical solution for modern zoo management.
-                        </p>
+            <h1>
+                My Projects
+            </h1>
 
-                        <p>
-                            <strong>Technologies:</strong>
-                            HTML and CSS
-                        </p>
+            <p>
+                Welcome to my project page. This section
+                showcases my academic and personal work
+                developed during my Computer Science studies.
+                More projects will be added as I continue
+                learning and developing my skills.
+            </p>
 
-                    </div>
+        </div>
 
-                </article>
+    </section>
 
 
-                <article class="project-card">
+    <!-- PROJECT GRID -->
 
-                    <div class="project-image">
-                        <img src="images/Climate Clarity.png "
-                             alt="Programming project">
-                    </div>
+    <section class="project-gallery">
 
-                    <div class="project-content">
+        <div class="project-gallery-container">
 
-                        <p class="project-number">03</p>
 
-                        <h2>Climate Clarity</h2>
+            <!-- PROJECT 1 -->
 
-                        <p>
-                            Programming exercises that helped me improve
-                            logical thinking and problem-solving skills.
-                        </p>
+            <article class="project-card">
 
-                        <p>
-                            <strong>Technology:</strong>
-                            Programming
-                        </p>
+                <div class="project-card-image">
+
+                    <img src="images/project1.png"
+                         alt="Personal Portfolio Project">
+
+                </div>
+
+                <div class="project-card-content">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <h2>
+                        Personal Portfolio
+                    </h2>
+
+                    <p>
+                        A responsive portfolio website created
+                        using HTML and CSS to present my skills,
+                        projects and learning journey.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Web Design</span>
 
                     </div>
 
-                </article>
+                </div>
+
+            </article>
 
 
-                <article class="project-card project-wide">
+            <!-- PROJECT 2 -->
 
-                    <div class="project-content">
+            <article class="project-card">
 
-                        <p class="project-number">04</p>
+                <div class="project-card-image">
 
-                        <h2>Future Project: AI Career & Study Platform</h2>
+                    <img src="images/project2.png"
+                         alt="Smart Campus Management System">
 
-                        <p>
-                            The AI Career & Study Platform is a smart web-based system designed to help students plan their education and future careers. It analyses a student’s skills, interests, academic performance, and career goals to recommend suitable career paths, learning resources, projects, and internships. The platform can also provide personalised study plans, quizzes, progress tracking, and AI-powered guidance, helping students make better decisions about their education and professional development.
-                        </p>
+                </div>
+
+                <div class="project-card-content">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <h2>
+                        Smart Campus System
+                    </h2>
+
+                    <p>
+                        A proposed digital system designed
+                        to organise campus services and
+                        improve the experience of students
+                        and staff.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>UI Design</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
 
                     </div>
 
-                </article>
+                </div>
 
-            </div>
-
-        </section>
-
-    </main>
+            </article>
 
 
-    <footer class="site-footer">
+            <!-- PROJECT 4 -->
 
-        <p>
-            &copy; 2026 Sneha Dhakal. All rights reserved.
-        </p>
+            <article class="project-card">
 
-    </footer>
+                <div class="project-card-image">
+
+                    <img src="images/project4.png"
+                         alt="Web Development Project">
+
+                </div>
+
+                <div class="project-card-content">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <h2>
+                        Climate Clarity 
+                    </h2>
+
+                    <p>
+                        A practical web development project
+                        demonstrating page structure, styling,
+                        layouts and responsive design.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+             <article class="project-card">
+
+                <div class="project-card-image">
+
+                    <img src="images/project3.png"
+                         alt="Web Development Project">
+
+                </div>
+
+                <div class="project-card-content">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <h2>
+                        Web Development Project
+                    </h2>
+
+                    <p>
+                        A practical web development project
+                        demonstrating page structure, styling,
+                        layouts and responsive design.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- FUTURE PLACEHOLDER -->
+
+            <article class="project-card coming-soon">
+
+                <div class="placeholder">
+
+                    <span>
+                        +
+                    </span>
+
+                    <h2>
+                        Future Project
+                    </h2>
+
+                    <p>
+                        Term 2 project will be added here.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- FUTURE PLACEHOLDER -->
+
+            <article class="project-card coming-soon">
+
+                <div class="placeholder">
+
+                    <span>
+                        +
+                    </span>
+
+                    <h2>
+                        More Coming Soon
+                    </h2>
+
+                    <p>
+                        New academic work will be added here.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FUTURE WORK -->
+
+    <section class="future-projects">
+
+        <div class="future-content">
+
+            <span>
+                COMING SOON
+            </span>
+
+            <h2>
+                More projects are on the way.
+            </h2>
+
+            <p>
+                As I progress through my Computer Science
+                degree, I will replace these placeholders
+                with work from Term 2 and other modules
+                that are suitable for my portfolio.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Sneha Dhakal |
+        Computer Science Student & Web Developer
+    </p>
+
+</footer>
+
+
+<!-- MENU SCRIPT -->
+
+<script>
+
+function openMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.add("active");
+
+}
+
+function closeMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.remove("active");
+
+}
+
+</script>
 
 </body>
 
