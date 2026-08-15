@@ -31,7 +31,6 @@
         SD
     </a>
 
-
     <button class="menu-button"
             onclick="openMenu()"
             aria-label="Open menu">
@@ -63,25 +62,17 @@
 
     <div class="menu-links">
 
-        <a href="index.html">
-            Home
-        </a>
+        <a href="index.html">Home</a>
 
-        <a href="blog.html">
-            Blog
-        </a>
+        <a href="blog.html">Blog</a>
 
-        <a href="project.html">
-            Projects
-        </a>
+        <a href="project.html">Projects</a>
 
-        <a href="contact.html">
-            Contact
-        </a>
+        <a href="skills.html">Skills</a>
 
-        <a href="sitereport.html">
-            Site Report
-        </a>
+        <a href="contact.html">Contact</a>
+
+        <a href="sitereport.html">Site Report</a>
 
     </div>
 
@@ -139,11 +130,9 @@
                 CONTACT INFORMATION
             </span>
 
-
             <h2>
                 Let's start a conversation.
             </h2>
-
 
             <p>
                 I am currently studying Computer Science and
@@ -168,8 +157,11 @@
                         Email
                     </span>
 
-                    <a href="mailto:snehadhakal@example.com">
-                        snehadhakal@example.com
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sneha.20261028@nami.edu.np"
+                       target="_blank">
+
+                        sneha.20261028@nami.edu.np
+
                     </a>
 
                 </div>
@@ -192,7 +184,7 @@
                     </span>
 
                     <p>
-                        Nepal
+                        Kathmandu,Nepal
                     </p>
 
                 </div>
@@ -210,19 +202,30 @@
 
                 <div class="social-links">
 
-                    <a href="#"
+                    <a href="https://www.linkedin.com/in/sneha-dhakal-ba21b6401/"
+                       target="_blank"
                        aria-label="LinkedIn">
+
                         in
+
                     </a>
 
-                    <a href="#"
+
+                    <a href="https://github.com/sneha20261028-netizen"
+                       target="_blank"
                        aria-label="GitHub">
+
                         G
+
                     </a>
 
-                    <a href="#"
+
+                    <a href="https://www.instagram.com/itssnehalyn/"
+                       target="_blank"
                        aria-label="Instagram">
+
                         ◎
+
                     </a>
 
                 </div>
@@ -251,12 +254,12 @@
 
             <!--
                 MAILTO FORM
-
                 This opens the user's email program.
-                No PHP/server-side language is required.
+                No server-side language is required.
             -->
 
-            <form action="mailto:snehadhakal@example.com"
+            <form id="contactForm"
+                  action="mailto:sneha.20261028@nami.edu.np"
                   method="post"
                   enctype="text/plain">
 
@@ -278,6 +281,7 @@
                 </div>
 
 
+
                 <!-- EMAIL -->
 
                 <div class="form-group">
@@ -293,6 +297,7 @@
                            required>
 
                 </div>
+
 
 
                 <!-- SUBJECT -->
@@ -312,6 +317,7 @@
                 </div>
 
 
+
                 <!-- MESSAGE -->
 
                 <div class="form-group">
@@ -329,7 +335,8 @@
                 </div>
 
 
-                <!-- SUBMIT -->
+
+                <!-- SUBMIT BUTTON -->
 
                 <button type="submit"
                         class="send-button">
@@ -341,7 +348,6 @@
             </form>
 
         </div>
-
 
     </div>
 
@@ -365,9 +371,9 @@
             Let's create something meaningful.
         </h2>
 
-        <a href="mailto:snehadhakal@example.com">
-            Email Me →
-        </a>
+        <a href="mailto:sneha.20261028@nami.edu.np">
+    Email Me →
+</a>
 
     </div>
 
@@ -394,10 +400,15 @@
 
 
 <!-- =====================================================
-     MENU JAVASCRIPT
+     JAVASCRIPT
 ===================================================== -->
 
 <script>
+
+
+/* =========================
+   SIDE MENU
+========================= */
 
 function openMenu() {
 
@@ -415,6 +426,64 @@ function closeMenu() {
         .classList.remove("active");
 
 }
+
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+document
+    .getElementById("contactForm")
+    .addEventListener("submit", function(event) {
+
+        /*
+           Stop the normal form submission
+           temporarily so we can show the message.
+        */
+
+        event.preventDefault();
+
+
+        /*
+           Show thank-you popup
+        */
+
+        alert(
+    "Your email application will now open. " +
+    "Please review the message and click Send."
+);
+
+
+        /*
+           Open the user's email program
+        */
+
+        window.location.href =
+            "mailto:sneha.20261028@nami.edu.np"
+            + "?subject="
+            + encodeURIComponent(
+                document.getElementById("subject").value
+            )
+            + "&body="
+            + encodeURIComponent(
+                "Name: "
+                + document.getElementById("name").value
+                + "\n\nEmail: "
+                + document.getElementById("email").value
+                + "\n\nMessage:\n"
+                + document.getElementById("message").value
+            );
+
+
+        /*
+           Clear the form
+        */
+
+        this.reset();
+
+    });
+
 
 </script>
 

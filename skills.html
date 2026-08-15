@@ -2,183 +2,503 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skills and education of Sneha Dhakal">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Skills and education of Sneha Dhakal">
+
     <title>Skills | Sneha Dhakal</title>
 
     <link rel="stylesheet" href="file.css">
+
 </head>
+
 
 <body>
 
-    <header class="site-header">
 
-        <nav aria-label="Main navigation">
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-            <a href="index.html" class="logo">Sneha Dhakal</a>
+<header class="navbar">
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="project.html">Projects</a>
-                <a href="skills.html">Skills</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="sitereport.html">Site Report</a>
-            </div>
+    <div class="logo">
+        SD
+    </div>
 
-        </nav>
+    <button class="menu-button"
+            onclick="openMenu()"
+            aria-label="Open menu">
 
-    </header>
+        <span></span>
+        <span></span>
+        <span></span>
 
+    </button>
 
-    <main>
-
-        <section class="page-introduction">
-
-            <div class="content-width">
-
-                <p class="eyebrow">MY DEVELOPMENT</p>
-
-                <h1>Skills &amp; Experience</h1>
-
-                <p>
-                    A summary of the technical and personal skills I am
-                    developing through my studies and projects.
-                </p>
-
-            </div>
-
-        </section>
+</header>
 
 
-        <!-- Technical skills -->
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
 
-        <section class="skills-section">
+<nav class="side-menu" id="sideMenu">
 
-            <div class="content-width">
+    <button class="close-button"
+            onclick="closeMenu()"
+            aria-label="Close menu">
 
-                <h2>Technical Skills</h2>
+        &times;
 
-                <div class="table-wrapper">
-
-                    <table>
-
-                        <caption>
-                            Current technical skills
-                        </caption>
-
-                        <thead>
-
-                            <tr>
-                                <th scope="col">Skill</th>
-                                <th scope="col">Level</th>
-                                <th scope="col">How I Use It</th>
-                            </tr>
-
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td>HTML</td>
-                                <td>Beginner</td>
-                                <td>Creating webpage structure</td>
-                            </tr>
-
-                            <tr>
-                                <td>CSS</td>
-                                <td>Beginner</td>
-                                <td>Styling and responsive layouts</td>
-                            </tr>
-
-                            <tr>
-                                <td>Programming</td>
-                                <td>Beginner</td>
-                                <td>Problem solving and coding practice</td>
-                            </tr>
-
-                            <tr>
-                                <td>Git &amp; GitHub</td>
-                                <td>Beginner</td>
-                                <td>Version control and project management</td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-            </div>
-
-        </section>
+    </button>
 
 
-        <!-- Lists -->
+    <div class="menu-links">
 
-        <section class="skills-lists">
+        <a href="index.html">Home</a>
 
-            <div class="content-width skill-list-grid">
+        <a href="blog.html">Blog</a>
 
-                <div class="list-card">
+        <a href="project.html">Projects</a>
 
-                    <h2>Technical Skills</h2>
+        <a href="skills.html" aria-current="page">Skills</a>
 
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Basic programming</li>
-                        <li>Git and GitHub</li>
-                        <li>Responsive web design</li>
-                    </ul>
+        <a href="contact.html">Contact</a>
 
-                </div>
+        <a href="sitereport.html">Site Report</a>
+
+    </div>
+
+</nav>
 
 
-                <div class="list-card">
 
-                    <h2>Soft Skills</h2>
-
-                    <ul>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Problem solving</li>
-                        <li>Time management</li>
-                        <li>Willingness to learn</li>
-                    </ul>
-
-                </div>
+<main>
 
 
-                <div class="list-card">
+<!-- =====================================================
+     PAGE INTRODUCTION
+===================================================== -->
 
-                    <h2>Current Learning Goals</h2>
+<section class="skills-hero">
 
-                    <ol>
-                        <li>Improve CSS layouts</li>
-                        <li>Improve responsive design</li>
-                        <li>Develop stronger programming skills</li>
-                        <li>Improve Git workflow</li>
-                        <li>Build more academic projects</li>
-                    </ol>
+    <div class="skills-hero-content">
 
-                </div>
+        <span class="page-label">
+            MY DEVELOPMENT
+        </span>
 
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="site-footer">
+        <h1>
+            Skills &amp; Experience
+        </h1>
 
         <p>
-            &copy; 2026 Sneha Dhakal. All rights reserved.
+            A summary of the technical and personal skills I am
+            developing through my studies and projects.
         </p>
 
-    </footer>
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILL CARDS (same as homepage)
+===================================================== -->
+
+<section class="skills-section">
+
+    <div class="skills-container">
+
+
+        <h2>
+            My Skills
+        </h2>
+
+
+        <div class="skills-grid">
+
+
+            <!-- SKILL 1 -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+                    &lt;/&gt;
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Creating responsive websites using
+                        HTML, CSS and JavaScript.
+                    </p>
+
+                    <a href="project.html">
+                        LEARN MORE
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SKILL 2 -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+                    ⚙
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Developing programs and solving
+                        problems using programming concepts.
+                    </p>
+
+                    <a href="project.html">
+                        LEARN MORE
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SKILL 3 -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+                    ✦
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h3>
+                        UI / UX Design
+                    </h3>
+
+                    <p>
+                        Designing clean, accessible and
+                        user-friendly digital interfaces.
+                    </p>
+
+                    <a href="project.html">
+                        LEARN MORE
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SKILL 4 -->
+
+            <article class="skill-card">
+
+                <div class="skill-icon">
+                    ◉
+                </div>
+
+
+                <div class="skill-content">
+
+                    <h3>
+                        Database
+                    </h3>
+
+                    <p>
+                        Understanding database concepts,
+                        data organisation and SQL fundamentals.
+                    </p>
+
+                    <a href="project.html">
+                        LEARN MORE
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- TECHNOLOGY -->
+
+        <div class="technology-section">
+
+
+            <h3>
+
+                I'm currently building my skills
+                in <span>technology</span>
+
+            </h3>
+
+
+            <p>
+
+                Continuously learning and improving my
+                technical knowledge through university
+                projects and practical work.
+
+            </p>
+
+
+            <div class="technology-icons">
+
+                <div class="tech">
+                    HTML
+                </div>
+
+                <div class="tech">
+                    CSS
+                </div>
+
+                <div class="tech">
+                    JS
+                </div>
+
+                <div class="tech">
+                    PY
+                </div>
+
+                <div class="tech">
+                    SQL
+                </div>
+
+                <div class="tech">
+                    GIT
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TECHNICAL SKILLS TABLE
+===================================================== -->
+
+<section class="skills-table-section">
+
+    <div class="skills-table-container">
+
+        <h2>
+            Technical Skills
+        </h2>
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <caption>
+                    Current technical skills
+                </caption>
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">How I Use It</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Beginner</td>
+                        <td>Creating structured and semantic webpages</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Beginner</td>
+                        <td>Styling pages and creating responsive layouts</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programming</td>
+                        <td>Beginner</td>
+                        <td>Problem solving and coding practice</td>
+                    </tr>
+
+                    <tr>
+                        <td>Git &amp; GitHub</td>
+                        <td>Beginner</td>
+                        <td>Version control and project management</td>
+                    </tr>
+
+                    <tr>
+                        <td>Responsive Web Design</td>
+                        <td>Beginner</td>
+                        <td>Creating websites for different screen sizes</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS LISTS
+===================================================== -->
+
+<section class="skills-lists">
+
+    <div class="skill-list-grid">
+
+
+        <!-- TECHNICAL SKILLS -->
+
+        <article class="list-card">
+
+            <h2>
+                Technical Skills
+            </h2>
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Basic programming</li>
+                <li>Git and GitHub</li>
+                <li>Responsive web design</li>
+            </ul>
+
+        </article>
+
+
+        <!-- SOFT SKILLS -->
+
+        <article class="list-card">
+
+            <h2>
+                Soft Skills
+            </h2>
+
+            <ul>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem solving</li>
+                <li>Time management</li>
+                <li>Willingness to learn</li>
+            </ul>
+
+        </article>
+
+
+        <!-- LEARNING GOALS -->
+
+        <article class="list-card">
+
+            <h2>
+                Current Learning Goals
+            </h2>
+
+            <ol>
+                <li>Improve CSS layouts</li>
+                <li>Improve responsive design</li>
+                <li>Develop stronger programming skills</li>
+                <li>Improve Git workflow</li>
+                <li>Build more academic projects</li>
+            </ol>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 Sneha Dhakal |
+        Computer Science Student & Web Developer
+
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     MENU JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function openMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.add("active");
+
+}
+
+
+function closeMenu() {
+
+    document
+        .getElementById("sideMenu")
+        .classList.remove("active");
+
+}
+
+</script>
+
 
 </body>
 

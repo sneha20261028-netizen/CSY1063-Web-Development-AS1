@@ -9,7 +9,8 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Site report and development experience of Sneha Dhakal's portfolio website">
+          content="Site report documenting the development, design,
+                   testing and reflection of Sneha Dhakal's portfolio website">
 
     <title>Site Report | Sneha Dhakal</title>
 
@@ -27,10 +28,9 @@
 
 <header class="navbar">
 
-    <div class="logo">
+    <a href="index.html" class="logo">
         SD
-    </div>
-
+    </a>
 
     <button class="menu-button"
             onclick="openMenu()"
@@ -69,6 +69,8 @@
 
         <a href="project.html">Projects</a>
 
+        <a href="skills.html">Skills</a>
+
         <a href="contact.html">Contact</a>
 
         <a href="sitereport.html">Site Report</a>
@@ -97,8 +99,7 @@
     </h1>
 
     <p>
-        My experience of learning web development,
-        design, coding and debugging.
+        Portfolio Website Development Report
     </p>
 
 </section>
@@ -106,88 +107,24 @@
 
 
 <!-- =====================================================
-     DEVELOPMENT EXPERIENCE
+     1. INTRODUCTION
 ===================================================== -->
 
 <section class="report-section">
 
     <h2>
-        My Development Experience
+        1. Introduction
     </h2>
 
-
     <p>
-
-        Developing this portfolio website has been a
-        valuable learning experience because it allowed
-        me to apply the basic web development concepts
-        that I learned during the module. At the beginning
-        of the term, I had a limited understanding of how
-        HTML and CSS work together to create a complete
-        website. I understood some basic HTML elements,
-        but I was not confident about creating a full
-        multi-page website independently.
-
-    </p>
-
-
-    <p>
-
-        I started my website by creating the main HTML
-        pages, including the home page, blog, projects,
-        contact page and site report. I learned that HTML
-        provides the structure of a website while CSS is
-        responsible for its visual presentation. Using
-        semantic elements such as
-        <code>&lt;header&gt;</code>,
-        <code>&lt;nav&gt;</code>,
-        <code>&lt;main&gt;</code>,
-        <code>&lt;section&gt;</code>,
-        <code>&lt;article&gt;</code> and
-        <code>&lt;footer&gt;</code>
-        helped me organise the website more effectively.
-
-    </p>
-
-
-    <p>
-
-        One of the most challenging parts was CSS. At first,
-        I found positioning, spacing, image sizing and
-        responsive layouts difficult. Sometimes changing
-        one CSS property affected another part of the page.
-        I had problems with images being too large or
-        cropped incorrectly and also had difficulties
-        keeping the layout consistent across different
-        screen sizes. However, debugging these problems
-        helped me understand CSS much better.
-
-    </p>
-
-
-    <p>
-
-        I also learned how useful browser developer tools
-        are when debugging a website. I used the browser
-        inspection tools to check elements, experiment
-        with CSS properties and identify layout problems.
-        I gradually learned that debugging is not about
-        getting everything correct on the first attempt.
-        It involves testing, identifying the problem,
-        changing the code and testing again.
-
-    </p>
-
-
-    <p>
-
-        Another important part of my development experience
-        was learning about Git and GitHub. I used Git to
-        track changes to my website and pushed my work to
-        GitHub. This helped me understand how developers
-        manage versions of their code and keep a record of
-        development progress.
-
+        Developing my portfolio website for CSY1063 Web
+        Development has been an important learning experience.
+        The aim was to create a professional and responsive
+        website that introduces me, presents my skills and
+        projects, provides blog content, and allows visitors
+        to contact me. I developed the website using HTML,
+        CSS and basic JavaScript without using a complete
+        pre-built template.
     </p>
 
 </section>
@@ -195,66 +132,23 @@
 
 
 <!-- =====================================================
-     REFLECTIVE DISCUSSION
+     2. DEVELOPMENT PROCESS
 ===================================================== -->
 
 <section class="report-section">
 
     <h2>
-        Reflective Discussion of My Module Experience
+        2. Development Process
     </h2>
 
-
     <p>
-
-        Looking back at the module, I can see a clear
-        improvement in my confidence with web development.
-        One of my biggest challenges was understanding why
-        my code sometimes did not produce the result I
-        expected. For example, I initially struggled with
-        CSS layout techniques and image positioning. I
-        sometimes changed several properties without
-        understanding which property was actually causing
-        the problem.
-
-    </p>
-
-
-    <p>
-
-        My experience improved when I started making smaller
-        changes and testing them individually. This helped
-        me understand the relationship between HTML
-        structure and CSS styling. I also became more
-        comfortable reading error messages and checking
-        my code carefully rather than immediately replacing
-        the entire section.
-
-    </p>
-
-
-    <p>
-
-        There were also positive moments during development.
-        Seeing my website gradually change from simple HTML
-        pages into a complete portfolio was motivating.
-        Creating the navigation, adding images, designing
-        project sections and making the site responsive
-        gave me a better understanding of how professional
-        websites are constructed.
-
-    </p>
-
-
-    <p>
-
-        Overall, the module has taught me that web
-        development requires patience and continuous
-        practice. I still have many areas to improve,
-        particularly JavaScript, advanced responsive design
-        and accessibility, but I now feel more confident
-        about continuing to develop my technical skills.
-
+        I began by planning the required pages: Home, Projects,
+        Skills, Blog, Contact and Site Report. I created the
+        HTML structure first and connected the pages using
+        navigation links. I used semantic elements such as header, nav, main, section,
+article, figure and footer to organise the content. Semantic
+HTML provides meaningful structure to web pages
+(MDN Web Docs, n.d.).
     </p>
 
 </section>
@@ -262,172 +156,52 @@
 
 
 <!-- =====================================================
-     DEVELOPMENT OVER THE TERM
+     3. DESIGN DECISIONS
 ===================================================== -->
 
 <section class="report-section">
 
     <h2>
-        Development of the Website
+        3. Design Decisions
     </h2>
 
-
-    <div class="development-timeline">
-
-
-        <article>
-
-            <h3>
-                Stage 1 – Planning
-            </h3>
-
-            <p>
-
-                I first planned the structure of my portfolio
-                and identified the pages required for the
-                website. I decided to create a home page,
-                projects page, blog page, contact page and
-                site report.
-
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <h3>
-                Stage 2 – HTML Structure
-            </h3>
-
-            <p>
-
-                I created the HTML files and connected the
-                pages using navigation links. I focused on
-                using appropriate semantic HTML elements rather
-                than using unnecessary div elements.
-
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <h3>
-                Stage 3 – CSS Design
-            </h3>
-
-            <p>
-
-                I created a consistent visual style using
-                dark purple backgrounds, lighter text and
-                purple accent colours. I also worked on
-                typography, spacing, buttons, cards and images.
-
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <h3>
-                Stage 4 – Testing and Debugging
-            </h3>
-
-            <p>
-
-                I tested the website in the browser and
-                corrected problems with images, spacing,
-                navigation and responsive layouts. I also
-                used HTML and CSS validation tools to identify
-                coding errors.
-
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <h3>
-                Stage 5 – Final Improvements
-            </h3>
-
-            <p>
-
-                Finally, I reviewed the pages for consistency,
-                improved the design, checked the navigation
-                and tested the website on different screen
-                sizes.
-
-            </p>
-
-        </article>
-
-
-    </div>
+    <p>
+        I selected a dark green and neutral colour scheme because I
+wanted the portfolio to have a professional but distinctive
+appearance. Dark green was used as the main visual colour,
+while neutral backgrounds and text colours were used to
+maintain readability. I used a clean sans-serif typeface
+because it is easy to read across different screen sizes.
+Consistent spacing, heading sizes and button styles were used
+throughout the pages to create visual consistency. I was also influenced by the layout and visual style of Brittany Chiang's portfolio,
+particularly its use of typography, spacing and navigation. I adapted
+these ideas to create my own design rather than copying the website.
 
 </section>
 
 
 
 <!-- =====================================================
-     DESIGN DECISIONS
+     4. CHALLENGES AND SOLUTIONS
 ===================================================== -->
 
 <section class="report-section">
 
     <h2>
-        Design Decisions
+        4. Challenges and Solutions
     </h2>
 
-
     <p>
-
-        I wanted my portfolio to have a modern and simple
-        visual identity. I selected a dark purple background
-        because it creates a strong contrast with the text
-        and gives the website a modern appearance. Purple
-        is also used as an accent colour for headings,
-        links and interactive elements.
-
-    </p>
-
-
-    <p>
-
-        For typography, I chose a clean sans-serif style
-        because it is easy to read on both desktop and
-        mobile screens. I used different font sizes and
-        weights to create a visual hierarchy between
-        headings, paragraphs and navigation links.
-
-    </p>
-
-
-    <p>
-
-        The home page was influenced by modern developer
-        portfolio designs that use a large introductory
-        section, a profile image and a short personal
-        introduction. I adapted this idea rather than
-        copying a complete template. I changed the content,
-        colours, structure and sections to make the website
-        suitable for my own portfolio.
-
-    </p>
-
-
-    <p>
-
-        I also designed the website with consistency in
-        mind. The navigation, colours, buttons and general
-        spacing are intended to remain similar throughout
-        the different pages so that users can easily
-        understand and navigate the website.
-
+        CSS layout was one of my biggest challenges. I
+        initially struggled with positioning, spacing, image
+        sizing and maintaining consistent layouts. Some
+        images were cropped because of fixed dimensions. I
+        solved these problems by using browser developer tools
+        to inspect elements and adjust the relevant CSS
+        properties. I learned to make smaller changes, test
+        them and identify the actual cause instead of changing
+        several properties simultaneously. This improved my
+        debugging skills and understanding of CSS.
     </p>
 
 </section>
@@ -435,36 +209,26 @@
 
 
 <!-- =====================================================
-     RESPONSIVE DESIGN
+     5. TESTING AND RESPONSIVE DESIGN
 ===================================================== -->
 
 <section class="report-section">
 
     <h2>
-        Responsive Design
+        5. Testing and Responsive Design
     </h2>
 
-
     <p>
-
-        Responsive design was an important part of the
-        development process. I used CSS media queries to
-        change the layout when the screen becomes smaller.
-        On desktop screens, content can be displayed in
-        multiple columns, while on mobile devices the
-        content is rearranged into a single-column layout.
-
-    </p>
-
-
-    <p>
-
-        I also adjusted image sizes, navigation spacing,
-        font sizes and buttons for smaller screens. I tested
-        the website using the browser's responsive design
-        tools to check how the pages behaved at different
-        screen widths.
-
+        Responsive design was an important part of development.
+        I used CSS media queries to adapt columns, images,
+        navigation, typography and spacing for smaller screens.
+        I tested the pages using browser responsive tools at
+        different screen widths. I also checked navigation
+        links, images, buttons and form fields. HTML and CSS
+        validation tools were used to identify structural and
+        syntax errors. Alternative text, form labels and
+        semantic HTML were also included to support
+        accessibility.
     </p>
 
 </section>
@@ -472,7 +236,66 @@
 
 
 <!-- =====================================================
-     VALIDATION
+     6. REFLECTION
+===================================================== -->
+
+<section class="report-section">
+
+    <h2>
+        6. Reflection
+    </h2>
+
+    <p>
+        The project significantly improved my confidence in HTML,
+CSS, responsive design, debugging and testing. At the beginning
+of the module, I found CSS layout and responsive positioning
+challenging, particularly when images or sections did not appear
+as expected. Through testing and using browser developer tools,
+I learned to identify individual problems rather than changing
+multiple CSS properties at the same time.
+
+Git and GitHub also helped me understand version control and
+the importance of recording development progress. One of the
+main lessons I learned was that web development requires
+continuous testing rather than waiting until the end of the
+project. I became more confident in solving problems
+independently. However, I still need to improve my JavaScript,
+accessibility testing and advanced responsive design skills.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     7. CONCLUSION
+===================================================== -->
+
+<section class="report-section">
+
+    <h2>
+        7. Conclusion
+    </h2>
+
+    <p>
+        Overall, creating this portfolio provided practical
+        experience in transforming a planned design into a
+        functional multi-page website. The project allowed me
+        to apply concepts learned during the module while
+        developing my own design style. In future, I would
+        add more advanced JavaScript features, conduct deeper
+        accessibility testing and replace placeholder content
+        with larger projects. This website provides a strong
+        foundation for continuing my web development journey.
+    </p>
+
+</section>
+
+
+
+
+<!-- =====================================================
+     VALIDATION EVIDENCE
 ===================================================== -->
 
 <section class="report-section validation-section">
@@ -481,28 +304,23 @@
         HTML and CSS Validation
     </h2>
 
-
     <p>
-
-        I used the W3C validation services to check the
-        HTML and CSS used throughout my website. Validation
-        helped me identify syntax problems and improve the
-        quality and consistency of my code.
-
+        The following screenshots provide evidence of HTML
+        and CSS validation carried out during development.
     </p>
 
 
     <div class="validation-grid">
 
-
         <figure>
 
             <img src="images/html-validation.png"
-                 alt="HTML validation report">
+                 alt="HTML validation result">
 
             <figcaption>
-                HTML validation result
-            </figcaption>
+    Figure 1: HTML validation result showing successful validation
+    of the portfolio HTML (W3C, n.d.).
+</figcaption>
 
         </figure>
 
@@ -510,14 +328,14 @@
         <figure>
 
             <img src="images/css-validation.png"
-                 alt="CSS validation report">
+                 alt="CSS validation result">
 
             <figcaption>
-                CSS validation result
-            </figcaption>
+    Figure 2: CSS validation result showing successful validation
+    of the portfolio stylesheet (W3C, n.d.).
+</figcaption>
 
         </figure>
-
 
     </div>
 
@@ -535,15 +353,10 @@
         Video Demonstration
     </h2>
 
-
     <p>
-
-        My video demonstration shows the main features
-        of my portfolio website, including the navigation,
-        responsive design, projects, blog and contact pages.
-
+        The video demonstrates the main pages, navigation,
+        responsive design and functionality of my portfolio.
     </p>
-
 
     <a href="YOUR-YOUTUBE-LINK-HERE"
        class="video-button"
@@ -568,32 +381,39 @@
         References
     </h2>
 
-
-    <p>
-
-        The following resources helped me understand
-        HTML, CSS, validation and responsive web design
-        during development.
-
-    </p>
-
-
     <ul>
 
-        <li>
-            W3C – HTML and CSS validation services.
-        </li>
+       <li>
+    MDN Web Docs (n.d.) HTML: HyperText Markup Language.
+    Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
+    (Accessed: 15 August 2026).
+</li>
 
-        <li>
-            MDN Web Docs – HTML and CSS documentation.
-        </li>
+<li>
+    Chiang, B. (n.d.) Brittany Chiang – Front End Software Engineer.
+    Available at: https://brittanychiang.com/
+    (Accessed: 15 August 2026).
+</li>
 
-        <li>
-            W3Schools – HTML and CSS learning resources.
-        </li>
+<li>
+    MDN Web Docs (n.d.) CSS: Cascading Style Sheets.
+    Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
+    (Accessed: 15 August 2026).
+</li>
+
+<li>
+    W3C (n.d.) Markup Validation Service.
+    Available at: https://validator.w3.org/
+    (Accessed: 15 August 2026).
+</li>
+
+<li>
+    W3Schools (n.d.) HTML Tutorial.
+    Available at: https://www.w3schools.com/html/
+    (Accessed: 15 August 2026).
+</li>
 
     </ul>
-
 
 </section>
 
