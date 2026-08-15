@@ -157,12 +157,9 @@
                         Email
                     </span>
 
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sneha.20261028@nami.edu.np"
-                       target="_blank">
-
-                        sneha.20261028@nami.edu.np
-
-                    </a>
+                    <a href="mailto:sneha.20261028@nami.edu.np">
+    sneha.20261028@nami.edu.np
+</a>
 
                 </div>
 
@@ -184,7 +181,9 @@
                     </span>
 
                     <p>
-                        Kathmandu,Nepal
+                        
+                    Kathmandu, Nepal
+
                     </p>
 
                 </div>
@@ -204,6 +203,7 @@
 
                     <a href="https://www.linkedin.com/in/sneha-dhakal-ba21b6401/"
                        target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="LinkedIn">
 
                         in
@@ -213,6 +213,7 @@
 
                     <a href="https://github.com/sneha20261028-netizen"
                        target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="GitHub">
 
                         G
@@ -222,6 +223,7 @@
 
                     <a href="https://www.instagram.com/itssnehalyn/"
                        target="_blank"
+                       rel="noopener noreferrer"
                        aria-label="Instagram">
 
                         ◎
@@ -252,33 +254,27 @@
             </h2>
 
 
-            <!--
-                MAILTO FORM
-                This opens the user's email program.
-                No server-side language is required.
-            -->
+           <!--
+    CONTACT FORM
+    JavaScript collects the entered information
+    and creates a mailto link to the recipient.
+    No server-side language is required.
+-->
+           <form id="contactForm">
 
-            <form id="contactForm"
-                  action="mailto:sneha.20261028@nami.edu.np"
-                  method="post"
-                  enctype="text/plain">
+    <div class="form-group">
 
+        <label for="name">
+            Your Name
+        </label>
 
-                <!-- NAME -->
+        <input type="text"
+               id="name"
+               name="Name"
+               placeholder="Enter your name"
+               required>
 
-                <div class="form-group">
-
-                    <label for="name">
-                        Your Name
-                    </label>
-
-                    <input type="text"
-                           id="name"
-                           name="Name"
-                           placeholder="Enter your name"
-                           required>
-
-                </div>
+    </div>
 
 
 

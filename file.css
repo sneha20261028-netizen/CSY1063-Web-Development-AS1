@@ -3245,3 +3245,249 @@ tbody tr:hover td {
     top: 0;
     border: none;
 }
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #a94cff;
+    outline-offset: 3px;
+}
+
+/* =========================================================
+   ACADEMIC EXPERIENCE
+========================================================= */
+
+.academic-experience {
+    padding: 80px 30px 120px;
+    background: #10071d;
+}
+
+.academic-experience-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.academic-experience-container > h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 15px;
+}
+
+.academic-experience-container > h2::after {
+    content: "";
+
+    display: block;
+
+    width: 75px;
+    height: 2px;
+
+    background: #8737c4;
+
+    margin-top: 10px;
+}
+
+.academic-experience-container > p {
+    max-width: 650px;
+
+    color: #c7bdcf;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+
+/* EXPERIENCE GRID */
+
+.experience-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+
+/* EXPERIENCE CARD */
+
+.experience-card {
+    position: relative;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #211033,
+            #341454
+        );
+
+    border-top:
+        2px solid #7228b7;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+
+    border-top-color: #b158ff;
+
+    box-shadow:
+        0 12px 35px
+        rgba(112, 35, 181, 0.3);
+}
+
+
+/* CARD NUMBER */
+
+.experience-card::before {
+    content: "01";
+
+    display: block;
+
+    color: #a94cff;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* DIFFERENT NUMBERS */
+
+.experience-card:nth-child(2)::before {
+    content: "02";
+}
+
+.experience-card:nth-child(3)::before {
+    content: "03";
+}
+
+.experience-card:nth-child(4)::before {
+    content: "04";
+}
+
+.experience-card:nth-child(5)::before {
+    content: "05";
+}
+
+
+.experience-card h3 {
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+.experience-card p {
+    color: #cfc5d7;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .academic-experience {
+        padding:
+            60px 20px
+            90px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        padding: 22px;
+    }
+
+}
+/* =========================================================
+   ACADEMIC EXPERIENCE - ENHANCED
+========================================================= */
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card p {
+    margin-bottom: 18px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.experience-tags span {
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    background: #241034;
+
+    border: 1px solid #4d2469;
+
+    color: #cdb9db;
+
+    font-size: 8px;
+
+    transition: 0.3s;
+}
+
+.experience-tags span:hover {
+    background: #8737c4;
+    border-color: #a94cff;
+    color: #ffffff;
+}
+
+.experience-link {
+    align-self: flex-start;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    border-bottom: 1px solid #a94cff;
+
+    padding-bottom: 3px;
+
+    transition: 0.3s;
+}
+
+.experience-link:hover {
+    color: #a94cff;
+
+    padding-left: 4px;
+}
