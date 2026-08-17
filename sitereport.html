@@ -9,12 +9,28 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Site report documenting the development, design,
-                   testing and reflection of Sneha Dhakal's portfolio website">
+          content="Site report documenting Sneha's CSY1063 Web Development portfolio project.">
 
-    <title>Site Report | Sneha Dhakal</title>
+    <title>Site Report — Sneha</title>
 
-    <link rel="stylesheet" href="file.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=Inter:wght@400;500&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="file.css">
 
 </head>
 
@@ -22,445 +38,482 @@
 <body>
 
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
+<div class="bg">
 
-<header class="navbar">
+    <div class="dots"></div>
 
-    <a href="index.html" class="logo">
-        SD
-    </a>
+    <div class="vignette"></div>
 
-    <button class="menu-button"
-            onclick="openMenu()"
-            aria-label="Open menu">
+</div>
 
-        <span></span>
-        <span></span>
-        <span></span>
 
-    </button>
+<div class="page">
 
-</header>
 
+    <!-- HEADER -->
 
+    <header>
 
-<!-- =====================================================
-     SIDE MENU
-===================================================== -->
+        <a class="nav-mark"
+           href="index.html">
 
-<nav class="side-menu" id="sideMenu">
+            S<span>·</span>D
 
-    <button class="close-button"
-            onclick="closeMenu()"
-            aria-label="Close menu">
+        </a>
 
-        &times;
 
-    </button>
+        <nav aria-label="Primary navigation">
 
+            <ul>
 
-    <div class="menu-links">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-        <a href="index.html">Home</a>
+                <li>
+                    <a href="project.html">
+                        Projects
+                    </a>
+                </li>
 
-        <a href="blog.html">Blog</a>
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
 
-        <a href="project.html">Projects</a>
+                <li>
+                    <a href="blog.html">
+                        Blog
+                    </a>
+                </li>
 
-        <a href="skills.html">Skills</a>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
 
-        <a href="contact.html">Contact</a>
+                <li>
+                    <a href="sitereport.html"
+                       aria-current="page">
+                        Site Report
+                    </a>
+                </li>
 
-        <a href="sitereport.html">Site Report</a>
+            </ul>
 
-    </div>
+        </nav>
 
-</nav>
+    </header>
 
 
+    <!-- MAIN CONTENT -->
 
-<main>
+    <main>
 
+        <section class="report-page"
+                 aria-labelledby="report-heading">
 
-<!-- =====================================================
-     REPORT HEADER
-===================================================== -->
 
-<section class="report-header">
+            <!-- REPORT INTRODUCTION -->
 
-    <p class="report-label">
-        CSY1063 | WEB DEVELOPMENT
-    </p>
+            <p class="eyebrow">
+                REFLECTIVE LOG — CSY1063
+            </p>
 
-    <h1>
-        Site Report
-    </h1>
 
-    <p>
-        Portfolio Website Development Report
-    </p>
+            <h1 id="report-heading">
+                Site Report
+            </h1>
 
-</section>
 
+            <article class="report-content">
 
 
-<!-- =====================================================
-     1. INTRODUCTION
-===================================================== -->
+                <!-- ==========================================
+                     GETTING STARTED
+                =========================================== -->
 
-<section class="report-section">
+                <section>
 
-    <h2>
-        1. Introduction
-    </h2>
+                    <h2>
+                        Getting Started
+                    </h2>
+
+                    <p>
+                        When I started CSY1063 Web Development, my knowledge of
+                        HTML and CSS was limited. I understood basic tags, but I
+                        was not confident creating a complete website independently.
+                        I developed each page separately and added styling gradually.
+                        Repeating styles became difficult, so I created a shared CSS
+                        file for navigation, typography, colours, spacing and
+                        responsive behaviour. This helped me understand the
+                        importance of planning and consistency.
+                    </p>
+
+                </section>
+
 
-    <p>
-        Developing my portfolio website for CSY1063 Web
-        Development has been an important learning experience.
-        The aim was to create a professional and responsive
-        website that introduces me, presents my skills and
-        projects, provides blog content, and allows visitors
-        to contact me. I developed the website using HTML,
-        CSS and basic JavaScript without using a complete
-        pre-built template.
-    </p>
+                <!-- ==========================================
+                     DESIGN DECISIONS
+                =========================================== -->
 
-</section>
+                <section>
 
+                    <h2>
+                        Design Decisions
+                    </h2>
 
+                    <p>
+                        I wanted my portfolio to look personal rather than like a
+                        ready-made template. I chose a dark background, light
+                        typography and warm amber accents to create a modern
+                        technical appearance. I selected Fraunces for headings
+                        because its serif style gives the portfolio character,
+                        while Inter keeps body text clean and readable. I also used
+                        consistent spacing, borders and layouts. Google Fonts
+                        supported my typography choices, while MDN Web Docs helped
+                        me understand CSS properties and responsive design.
+                    </p>
 
-<!-- =====================================================
-     2. DEVELOPMENT PROCESS
-===================================================== -->
+                </section>
 
-<section class="report-section">
 
-    <h2>
-        2. Development Process
-    </h2>
+                <!-- ==========================================
+                     DEVELOPMENT EXPERIENCE
+                =========================================== -->
 
-    <p>
-        I began by planning the required pages: Home, Projects,
-        Skills, Blog, Contact and Site Report. I created the
-        HTML structure first and connected the pages using
-        navigation links. I used semantic elements such as header, nav, main, section,
-article, figure and footer to organise the content. Semantic
-HTML provides meaningful structure to web pages
-(MDN Web Docs, n.d.).
-    </p>
+                <section>
 
-</section>
+                    <h2>
+                        Development Experience
+                    </h2>
 
+                    <p>
+                        The most challenging part was maintaining consistency
+                        across six pages. The Projects page was particularly
+                        challenging because it needed individual project cards
+                        while demonstrating a different grid arrangement. I also
+                        experienced problems with image paths, filenames and
+                        positioning. Debugging these issues taught me to check
+                        HTML structure and file organisation instead of assuming
+                        every problem was caused by CSS. The project improved my
+                        confidence with semantic HTML, CSS Grid, Flexbox and
+                        reusable styles.
+                    </p>
 
+                </section>
 
-<!-- =====================================================
-     3. DESIGN DECISIONS
-===================================================== -->
 
-<section class="report-section">
+                <!-- ==========================================
+                     VALIDATION AND ACCESSIBILITY
+                =========================================== -->
 
-    <h2>
-        3. Design Decisions
-    </h2>
+                <section>
 
-    <p>
-        I selected a dark green and neutral colour scheme because I
-wanted the portfolio to have a professional but distinctive
-appearance. Dark green was used as the main visual colour,
-while neutral backgrounds and text colours were used to
-maintain readability. I used a clean sans-serif typeface
-because it is easy to read across different screen sizes.
-Consistent spacing, heading sizes and button styles were used
-throughout the pages to create visual consistency. I was also influenced by the layout and visual style of Brittany Chiang's portfolio,
-particularly its use of typography, spacing and navigation. I adapted
-these ideas to create my own design rather than copying the website.
+                    <h2>
+                        Validation and Accessibility
+                    </h2>
 
-</section>
+                    <p>
+                        I checked the website using the
+                        <a href="https://validator.w3.org/"
+                           target="_blank"
+                           rel="noopener">
+                            W3C Markup Validation Service
+                        </a>
+                        and the
+                        <a href="https://jigsaw.w3.org/css-validator/"
+                           target="_blank"
+                           rel="noopener">
+                            W3C CSS Validation Service
+                        </a>.
+                        These tools helped identify structural and styling issues
+                        before submission. I also used meaningful navigation,
+                        labels, alternative image text and clear form controls
+                        to improve accessibility. The portfolio was designed to
+                        work across desktop, tablet and mobile displays.
+                    </p>
 
 
+                    <!-- VALIDATION SCREENSHOTS -->
 
-<!-- =====================================================
-     4. CHALLENGES AND SOLUTIONS
-===================================================== -->
+                    <div class="validation-shots">
 
-<section class="report-section">
 
-    <h2>
-        4. Challenges and Solutions
-    </h2>
+                        <figure class="shot">
 
-    <p>
-        CSS layout was one of my biggest challenges. I
-        initially struggled with positioning, spacing, image
-        sizing and maintaining consistent layouts. Some
-        images were cropped because of fixed dimensions. I
-        solved these problems by using browser developer tools
-        to inspect elements and adjust the relevant CSS
-        properties. I learned to make smaller changes, test
-        them and identify the actual cause instead of changing
-        several properties simultaneously. This improved my
-        debugging skills and understanding of CSS.
-    </p>
+                            <img src="images/html-validation.png"
+                                 alt="HTML validation result">
 
-</section>
+                            <figcaption>
+                                HTML validation result
+                            </figcaption>
 
+                        </figure>
 
 
-<!-- =====================================================
-     5. TESTING AND RESPONSIVE DESIGN
-===================================================== -->
+                        <figure class="shot">
 
-<section class="report-section">
+                            <img src="images/css-validation.png"
+                                 alt="CSS validation result">
 
-    <h2>
-        5. Testing and Responsive Design
-    </h2>
+                            <figcaption>
+                                CSS validation result
+                            </figcaption>
 
-    <p>
-        Responsive design was an important part of development.
-        I used CSS media queries to adapt columns, images,
-        navigation, typography and spacing for smaller screens.
-        I tested the pages using browser responsive tools at
-        different screen widths. I also checked navigation
-        links, images, buttons and form fields. HTML and CSS
-        validation tools were used to identify structural and
-        syntax errors. Alternative text, form labels and
-        semantic HTML were also included to support
-        accessibility.
-    </p>
+                        </figure>
 
-</section>
 
+                    </div>
 
+                </section>
 
-<!-- =====================================================
-     6. REFLECTION
-===================================================== -->
 
-<section class="report-section">
+                <!-- ==========================================
+                     VIDEO DEMONSTRATION
+                =========================================== -->
 
-    <h2>
-        6. Reflection
-    </h2>
+                <section>
 
-    <p>
-        The project significantly improved my confidence in HTML,
-CSS, responsive design, debugging and testing. At the beginning
-of the module, I found CSS layout and responsive positioning
-challenging, particularly when images or sections did not appear
-as expected. Through testing and using browser developer tools,
-I learned to identify individual problems rather than changing
-multiple CSS properties at the same time.
+                    <h2>
+                        Video Demonstration
+                    </h2>
 
-Git and GitHub also helped me understand version control and
-the importance of recording development progress. One of the
-main lessons I learned was that web development requires
-continuous testing rather than waiting until the end of the
-project. I became more confident in solving problems
-independently. However, I still need to improve my JavaScript,
-accessibility testing and advanced responsive design skills.
-    </p>
+                    <p>
+                        I created a short demonstration video showing the
+                        portfolio website and explaining the main pages,
+                        design choices and functionality.
+                    </p>
 
-</section>
 
+                    <!-- Replace this with your actual YouTube URL -->
 
+                    <a class="video-link"
+                       href="YOUR_ACTUAL_YOUTUBE_LINK"
+                       target="_blank"
+                       rel="noopener">
+                        Watch My Portfolio Demonstration
+                    </a>
 
-<!-- =====================================================
-     7. CONCLUSION
-===================================================== -->
+                </section>
 
-<section class="report-section">
 
-    <h2>
-        7. Conclusion
-    </h2>
+                <!-- ==========================================
+                     REFLECTION
+                =========================================== -->
 
-    <p>
-        Overall, creating this portfolio provided practical
-        experience in transforming a planned design into a
-        functional multi-page website. The project allowed me
-        to apply concepts learned during the module while
-        developing my own design style. In future, I would
-        add more advanced JavaScript features, conduct deeper
-        accessibility testing and replace placeholder content
-        with larger projects. This website provides a strong
-        foundation for continuing my web development journey.
-    </p>
+                <section>
 
-</section>
+                    <h2>
+                        Reflection
+                    </h2>
 
+                    <p>
+                        This project improved my practical understanding of web
+                        development. I learned to separate structure from
+                        presentation and debug problems systematically. If I
+                        completed the project again, I would plan responsive
+                        behaviour earlier, organise images from the beginning
+                        and create the shared stylesheet before building
+                        individual pages. Overall, the project has made me more
+                        confident in designing, developing, validating and
+                        maintaining a website independently. I also learned that
+                        good design requires balancing appearance with usability,
+                        readable content and clear navigation. Throughout the
+                        process, I reviewed my work regularly and made changes
+                        when layouts felt crowded or unclear. This helped me
+                        recognise weaknesses, make design decisions, and
+                        understand how small improvements can strengthen the
+                        user experience. It also encouraged me to think about
+                        visitors, accessibility, content hierarchy, usability
+                        and future improvements during development.
+                    </p>
 
+                </section>
 
 
-<!-- =====================================================
-     VALIDATION EVIDENCE
-===================================================== -->
+                <!-- ==========================================
+                     AI ASSISTANCE AND CODE ACKNOWLEDGEMENT
+                =========================================== -->
 
-<section class="report-section validation-section">
+                <section>
 
-    <h2>
-        HTML and CSS Validation
-    </h2>
+                    <h2>
+                        AI Assistance and Code Acknowledgement
+                    </h2>
 
-    <p>
-        The following screenshots provide evidence of HTML
-        and CSS validation carried out during development.
-    </p>
+                    <p>
+                        During development, I used ChatGPT as a learning and
+                        development support tool to help explain HTML and CSS
+                        concepts, identify coding errors and suggest possible
+                        improvements. I reviewed the suggestions, adapted the
+                        code to my own website and tested the changes before
+                        using them. The final page structure, content, styling
+                        choices, layout and implementation were reviewed and
+                        adjusted by me. Using AI support also helped me
+                        understand why particular HTML elements and CSS
+                        properties were required rather than simply using code
+                        without understanding it.
+                    </p>
 
+                </section>
 
-    <div class="validation-grid">
 
-        <figure>
+                <!-- ==========================================
+                     REFERENCES
+                =========================================== -->
 
-            <img src="images/html-validation.png"
-                 alt="HTML validation result">
+                <section>
 
-            <figcaption>
-    Figure 1: HTML validation result showing successful validation
-    of the portfolio HTML (W3C, n.d.).
-</figcaption>
+                    <h2>
+                        References
+                    </h2>
 
-        </figure>
 
+                    <ul class="references">
 
-        <figure>
 
-            <img src="images/css-validation.png"
-                 alt="CSS validation result">
+                        <!-- GOOGLE FONTS -->
 
-            <figcaption>
-    Figure 2: CSS validation result showing successful validation
-    of the portfolio stylesheet (W3C, n.d.).
-</figcaption>
+                        <li>
 
-        </figure>
+                            Google Fonts (2026)
+                            <em>Google Fonts</em>.
 
-    </div>
+                            Available at:
 
-</section>
+                            <a href="https://fonts.google.com/"
+                               target="_blank"
+                               rel="noopener">
+                                https://fonts.google.com/
+                            </a>
 
+                            (Accessed: 17 August 2026).
 
+                        </li>
 
-<!-- =====================================================
-     VIDEO DEMONSTRATION
-===================================================== -->
 
-<section class="report-section video-section">
+                        <!-- MDN -->
 
-    <h2>
-        Video Demonstration
-    </h2>
+                        <li>
 
-    <p>
-        The video demonstrates the main pages, navigation,
-        responsive design and functionality of my portfolio.
-    </p>
+                            Mozilla Developer Network (MDN) (2026)
+                            <em>CSS: Cascading Style Sheets</em>.
 
-    <a href="YOUR-YOUTUBE-LINK-HERE"
-       class="video-button"
-       target="_blank"
-       rel="noopener noreferrer">
+                            Available at:
 
-        Watch My Portfolio Demonstration
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                               target="_blank"
+                               rel="noopener">
+                                https://developer.mozilla.org/en-US/docs/Web/CSS
+                            </a>
 
-    </a>
+                            (Accessed: 17 August 2026).
 
-</section>
+                        </li>
 
 
+                        <!-- W3C HTML -->
 
-<!-- =====================================================
-     REFERENCES
-===================================================== -->
+                        <li>
 
-<section class="report-section references">
+                            World Wide Web Consortium (W3C) (2026)
+                            <em>Markup Validation Service</em>.
 
-    <h2>
-        References
-    </h2>
+                            Available at:
 
-    <ul>
+                            <a href="https://validator.w3.org/"
+                               target="_blank"
+                               rel="noopener">
+                                https://validator.w3.org/
+                            </a>
 
-       <li>
-    MDN Web Docs (n.d.) HTML: HyperText Markup Language.
-    Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
-    (Accessed: 15 August 2026).
-</li>
+                            (Accessed: 17 August 2026).
 
-<li>
-    Chiang, B. (n.d.) Brittany Chiang – Front End Software Engineer.
-    Available at: https://brittanychiang.com/
-    (Accessed: 15 August 2026).
-</li>
+                        </li>
 
-<li>
-    MDN Web Docs (n.d.) CSS: Cascading Style Sheets.
-    Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
-    (Accessed: 15 August 2026).
-</li>
 
-<li>
-    W3C (n.d.) Markup Validation Service.
-    Available at: https://validator.w3.org/
-    (Accessed: 15 August 2026).
-</li>
+                        <!-- W3C CSS -->
 
-<li>
-    W3Schools (n.d.) HTML Tutorial.
-    Available at: https://www.w3schools.com/html/
-    (Accessed: 15 August 2026).
-</li>
+                        <li>
 
-    </ul>
+                            World Wide Web Consortium (W3C) (2026)
+                            <em>CSS Validation Service</em>.
 
-</section>
+                            Available at:
 
+                            <a href="https://jigsaw.w3.org/css-validator/"
+                               target="_blank"
+                               rel="noopener">
+                                https://jigsaw.w3.org/css-validator/
+                            </a>
 
-</main>
+                            (Accessed: 17 August 2026).
 
+                        </li>
 
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+                        <!-- CHATGPT -->
 
-<footer>
+                        <li>
 
-    <p>
-        © 2026 Sneha Dhakal |
-        Computer Science Student & Web Developer
-    </p>
+                            OpenAI (2026)
+                            <em>ChatGPT</em>.
 
-</footer>
+                            Available at:
 
+                            <a href="https://chatgpt.com/"
+                               target="_blank"
+                               rel="noopener">
+                                https://chatgpt.com/
+                            </a>
 
+                            (Accessed: 17 August 2026).
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
+                        </li>
 
-<script>
 
-function openMenu() {
+                    </ul>
 
-    document
-        .getElementById("sideMenu")
-        .classList.add("active");
+                </section>
 
-}
 
+            </article>
 
-function closeMenu() {
+        </section>
 
-    document
-        .getElementById("sideMenu")
-        .classList.remove("active");
+    </main>
 
-}
 
-</script>
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p class="status">
+            system nominal — built and maintained by Sneha
+        </p>
+
+
+        <div class="socials">
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="sitereport.html">
+                Site Report
+            </a>
+
+        </div>
+
+    </footer>
+
+
+</div>
 
 
 </body>

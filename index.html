@@ -8,12 +8,20 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Personal portfolio website of Sneha Dhakal">
+    <title>Sneha — Portfolio</title>
 
-    <title>Sneha Dhakal | Portfolio</title>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="stylesheet" href="file.css">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=Inter:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="file.css">
 
 </head>
 
@@ -21,646 +29,524 @@
 <body>
 
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
+<!-- BACKGROUND -->
 
-<header class="navbar">
+<div class="bg">
 
-    <div class="logo">
-        SD
-    </div>
+    <div class="dots"></div>
 
-    <button class="menu-button"
-            onclick="openMenu()"
-            aria-label="Open menu">
+    <svg class="pcb"
+         width="100%"
+         height="100%">
 
-        <span></span>
-        <span></span>
-        <span></span>
+        <path d="M -10 40 L 90 40 L 120 70 L 220 70"></path>
 
-    </button>
+        <path d="M -10 90 L 40 90 L 70 60"></path>
 
-</header>
+        <circle cx="90" cy="40" r="3"></circle>
 
+        <circle cx="120" cy="70" r="3"></circle>
 
-<!-- =====================================================
-     SIDE MENU
-===================================================== -->
+        <circle cx="40" cy="90" r="3"></circle>
 
-<nav class="side-menu" id="sideMenu">
+    </svg>
 
-    <button class="close-button"
-            onclick="closeMenu()"
-            aria-label="Close menu">
+    <div class="baseline"></div>
 
-        &times;
+    <div class="vignette"></div>
 
-    </button>
+</div>
 
 
-    <div class="menu-links">
 
-        <a href="index.html">Home</a>
+<!-- PAGE -->
 
-        <a href="blog.html">Blog</a>
+<div class="page">
 
-        <a href="project.html">Projects</a>
 
-        <a href="skills.html">Skills</a>
+    <!-- HEADER -->
 
-        <a href="contact.html">Contact</a>
+    <header>
 
-        <a href="sitereport.html">Site Report</a>
+        <a class="nav-mark"
+           href="index.html">
 
-    </div>
+            S<span>·</span>D
 
-</nav>
+        </a>
 
 
+        <nav aria-label="Primary">
 
-<main>
+            <ul>
 
+                <li>
+                    <a href="index.html"
+                       aria-current="page">
+                        Home
+                    </a>
+                </li>
 
-<!-- =====================================================
-     HERO SECTION
-===================================================== -->
+                <li>
+                    <a href="project.html">
+                        Projects
+                    </a>
+                </li>
 
-<section class="home-hero">
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
 
+                <li>
+                    <a href="blog.html">
+                        Blog
+                    </a>
+                </li>
 
-    <!-- PROFILE IMAGE -->
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
 
-    <div class="hero-image">
+                <li>
+                    <a href="sitereport.html">
+                        Site Report
+                    </a>
+                </li>
 
-        <div class="purple-glow"></div>
+            </ul>
 
-        <img src="images/profile.png"
-             alt="Sneha Dhakal"
-             class="profile">
+        </nav>
 
-    </div>
+    </header>
 
 
 
-    <!-- HERO TEXT -->
+    <!-- MAIN -->
 
-    <div class="hero-content">
+    <main>
 
-        <div class="hero-text">
 
-            <p class="greeting">
-                👋 Hey, I'm <span class="highlight">Sneha Dhakal</span>
-            </p>
+        <!-- =========================
+             HERO
+        ========================== -->
 
-            <p class="subtitle">
-                A Computer Science Student who
-            </p>
+        <section class="hero">
 
-            <h1 class="main-heading">
-                Judges a book<br>
-                by its <span class="highlight">cover.</span>
-            </h1>
+            <div class="hero-text">
 
-            <p class="tagline">
-                First impressions? I take them seriously.
-            </p>
+                <p class="eyebrow">
+                    Portfolio — CSY1063
+                </p>
 
-            <h2 class="role">
-                I'm a <span class="highlight">Web Developer</span>
-            </h2>
 
-            <p class="description">
-                Currently, I'm a <strong>Computer Science Student</strong>
-                at Naaya Aayam Multi-Disciplinary Institute.
-            </p>
+                <h1 id="hero-heading">
 
-            <p class="about">
-                I build clean, user-friendly web experiences —
-                blending design and code while I grow as a developer.
-            </p>
+                    Hi, I'm Sneha —
 
-        </div>
+                    <em>
+                        welcome to my portfolio.
+                    </em>
 
+                </h1>
 
-        <div class="hero-buttons">
 
-            <a href="project.html"
-               class="primary-button">
+                <p class="tagline">
 
-                View My Projects
+                    I am a Computer Science student interested
+                    in web development, programming and creative
+                    digital solutions. This portfolio presents
+                    my learning journey, skills and projects
+                    developed during my studies.
 
-            </a>
+                </p>
 
 
-            <a href="contact.html"
-               class="secondary-button">
+                <div class="cta-row">
 
-                Contact Me
+                    <a class="cta"
+                       href="project.html">
 
-            </a>
+                        View my projects
 
-        </div>
+                    </a>
 
 
-    </div>
+                    <a class="cta-secondary"
+                       href="contact.html">
 
-</section>
+                        Get in touch →
 
+                    </a>
 
-
-<!-- =====================================================
-     SKILLS SECTION
-===================================================== -->
-
-<section class="skills-section">
-
-    <div class="skills-container">
-
-
-        <h2>
-            My Skills
-        </h2>
-
-
-        <div class="skills-grid">
-
-
-            <!-- SKILL 1 -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    &lt;/&gt;
                 </div>
 
+            </div>
 
-                <div class="skill-content">
+
+
+            <!-- PROFILE PHOTO -->
+
+            <div class="hero-photo">
+
+                <img src="profile.jpg"
+                     alt="Sneha Dhakal">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT ME
+        ========================== -->
+
+        <section class="about-section">
+
+            <div class="about-title">
+
+                <p class="eyebrow">
+                    About
+                </p>
+
+                <h2>
+                    About Me
+                </h2>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p>
+
+                    I am a BSc (Hons) Computer Science student
+                    with an interest in web development,
+                    programming and technology. I enjoy learning
+                    how websites and digital systems work and
+                    turning ideas into simple and useful
+                    solutions.
+
+                </p>
+
+
+                <p>
+
+                    During my studies, I have developed practical
+                    experience with HTML, CSS, Python, SQL and
+                    Git. I also enjoy working on creative projects
+                    where I can combine technical knowledge with
+                    design and problem-solving.
+
+                </p>
+
+
+                <p>
+
+                    My goal is to continue improving my technical
+                    skills, gain practical experience and build
+                    projects that reflect my growth as a Computer
+                    Science student.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="home-skills">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    What I Know
+                </p>
+
+                <h2>
+                    Skills
+                </h2>
+
+                <p>
+                    A combination of technical knowledge,
+                    practical abilities and personal skills
+                    developed through my studies and projects.
+                </p>
+
+            </div>
+
+
+
+            <div class="skill-boxes">
+
+
+                <!-- BOX 1 -->
+
+                <div class="skill-box">
 
                     <h3>
                         Web Development
                     </h3>
 
                     <p>
-                        Creating responsive websites using
-                        HTML, CSS and JavaScript.
+
+                        HTML, CSS and basic responsive web
+                        development. Creating clean and
+                        user-friendly website layouts.
+
                     </p>
 
-                    <a href="skills.html">
-                        LEARN MORE
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- SKILL 2 -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    ⚙
                 </div>
 
 
-                <div class="skill-content">
+
+                <!-- BOX 2 -->
+
+                <div class="skill-box">
 
                     <h3>
-                        Programming
+                        Technical Skills
                     </h3>
 
                     <p>
-                        Developing programs and solving
-                        problems using programming concepts.
+
+                        Python, SQL, Git, basic programming,
+                        databases and problem-solving.
+
                     </p>
 
-                    <a href="skills.html">
-                        LEARN MORE
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- SKILL 3 -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    ✦
                 </div>
 
 
-                <div class="skill-content">
+
+                <!-- BOX 3 -->
+
+                <div class="skill-box">
 
                     <h3>
-                        UI / UX Design
+                        Soft Skills
                     </h3>
 
                     <p>
-                        Designing clean, accessible and
-                        user-friendly digital interfaces.
+
+                        Communication, teamwork, creativity,
+                        time management and willingness to learn.
+
                     </p>
 
-                    <a href="skills.html">
-                        LEARN MORE
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- SKILL 4 -->
-
-            <article class="skill-card">
-
-                <div class="skill-icon">
-                    ◉
                 </div>
 
 
-                <div class="skill-content">
+
+                <!-- BOX 4 -->
+
+                <div class="skill-box">
 
                     <h3>
-                        Database
+                        Tools
                     </h3>
 
                     <p>
-                        Understanding database concepts,
-                        data organisation and SQL fundamentals.
+
+                        GitHub, VS Code, Canva, Microsoft Office
+                        and other tools used for learning and
+                        project development.
+
                     </p>
 
-                    <a href="skills.html">
-                        LEARN MORE
-                    </a>
-
                 </div>
 
-            </article>
-
-
-        </div>
-
-
-
-        <!-- TECHNOLOGY -->
-
-        <div class="technology-section">
-
-
-            <h3>
-
-                I'm currently building my skills
-                in <span>technology</span>
-
-            </h3>
-
-
-            <p>
-
-                Continuously learning and improving my
-                technical knowledge through university
-                projects and practical work.
-
-            </p>
-
-
-            <div class="technology-icons">
-
-                <div class="tech">
-                    HTML
-                </div>
-
-                <div class="tech">
-                    CSS
-                </div>
-
-                <div class="tech">
-                    JS
-                </div>
-
-                <div class="tech">
-                    PY
-                </div>
-
-                <div class="tech">
-                    SQL
-                </div>
-
-                <div class="tech">
-                    GIT
-                </div>
 
             </div>
 
-        </div>
-
-
-    </div>
-
-</section>
+        </section>
 
 
 
-<!-- =====================================================
-     FEATURED PROJECTS
-===================================================== -->
+        <!-- =========================
+             PROJECTS
+        ========================== -->
 
-<section class="featured-projects">
+        <section class="home-projects">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    My Work
+                </p>
+
+                <h2>
+                    Projects
+                </h2>
+
+                <p>
+
+                    Some of the projects I have worked on while
+                    developing my programming and web development
+                    skills.
+
+                </p>
+
+            </div>
 
 
-    <div class="projects-container">
+
+            <div class="home-project-grid">
 
 
-        <div class="projects-heading">
+                <!-- PROJECT 1 -->
+
+                <div class="home-project-box">
+
+                    <span>
+                        PROJECT 01
+                    </span>
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+
+                        A personal portfolio website created using
+                        HTML and CSS to present my skills, projects,
+                        learning journey and academic work.
+
+                    </p>
+
+                    <a href="project.html">
+                        View project →
+                    </a>
+
+                </div>
 
 
-            <span>
-                FEATURED PROJECTS
-            </span>
 
+                <!-- PROJECT 2 -->
+
+                <div class="home-project-box">
+
+                    <span>
+                        PROJECT 02
+                    </span>
+
+                    <h3>
+                        Climate Clarity
+                    </h3>
+
+                    <p>
+
+                        An AI-powered concept designed to provide
+                        accessible climate information and help
+                        users understand climate-related issues
+                        in Nepal.
+
+                    </p>
+
+                    <a href="project.html">
+                        View project →
+                    </a>
+
+                </div>
+
+
+
+                <!-- PROJECT 3 -->
+
+                <div class="home-project-box">
+
+                    <span>
+                        PROJECT 03
+                    </span>
+
+                    <h3>
+                        Rescue MS
+                    </h3>
+
+                    <p>
+
+                        A digital transformation project focused
+                        on wildlife conservation, animal records,
+                        sponsorship management and reporting.
+
+                    </p>
+
+                    <a href="project.html">
+                        View project →
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="contact-home">
+
+            <p class="eyebrow">
+                Let's Connect
+            </p>
 
             <h2>
-                My Recent Work
+                Contact Me
             </h2>
 
-
             <p>
-                A selection of projects that demonstrate
-                my web development and creative skills.
+
+                Interested in my work or want to get in touch?
+                You can find my contact details and send me
+                a message through the contact page.
+
             </p>
 
+            <a class="cta"
+               href="contact.html">
 
-        </div>
+                Contact Me
 
-
-
-        <!-- PROJECT 1 -->
-
-        <article class="featured-project project-one">
-
-
-            <div class="project-image">
-
-                <img src="images/Protfolio.png"
-                     alt="Personal Portfolio Website">
-
-            </div>
-
-
-            <div class="project-info">
-
-                <span class="project-label">
-                    Featured Project
-                </span>
-
-
-                <h3>
-                    Personal Portfolio
-                </h3>
-
-
-                <p>
-
-                    A responsive personal portfolio website
-                    created using HTML and CSS to showcase
-                    my skills, projects and learning journey.
-
-                </p>
-
-
-                <a href="project.html">
-                    View Project →
-                </a>
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- PROJECT 2 -->
-
-        <article class="featured-project project-two">
-
-
-            <div class="project-image">
-
-                <img src="images/RescueMS.png"
-                     alt="RescueMS">
-
-            </div>
-
-
-            <div class="project-info">
-
-                <span class="project-label">
-                    Featured Project
-                </span>
-
-
-                <h3>
-                    RescueMS
-                </h3>
-
-
-                <p>
-                    RescueMS (Rescue Management System) is a web-based zoo management system designed to improve the way a zoo manages animals, visitors, memberships, sponsorships, events, and administrative activities. The system provides a centralised platform where staff can manage animal records, update information, organise events, handle visitor bookings, and manage sponsorship programmes. Visitors can use the system to explore animals, learn about the zoo, purchase memberships, make bookings, and support animals through sponsorship. RescueMS aims to make zoo management more efficient while providing visitors with a simple, accessible, and engaging digital experience.
-                </p>
-
-
-                <a href="project.html">
-                    View Project →
-                </a>
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- PROJECT 3 -->
-
-        <article class="featured-project project-three">
-
-
-            <div class="project-image">
-
-                <img src="images/Climate Clarity.png"
-                     alt="Climate Clarity">
-
-            </div>
-
-
-            <div class="project-info">
-
-                <span class="project-label">
-                    Featured Project
-                </span>
-
-
-                <h3>
-                    Climate Clarity
-                </h3>
-
-
-                <p>
-
-                Climate Clarity is an AI-powered climate information platform developed to make complex climate reports easier for people in Nepal to understand. The project transforms lengthy and technical climate reports into simple visual summaries, interactive information for all 77 districts, transparency scorecards, bilingual audio explanations, and a promise tracker for monitoring climate commitments. By making climate data more accessible and understandable, Climate Clarity aims to empower citizens to stay informed, understand local climate issues, and take meaningful action towards a more sustainable future.
-
-
-
-                </p>
-
-
-                <a href="project.html">
-                    View Project →
-                </a>
-
-            </div>
-
-
-        </article>
-
-
-
-        <div class="all-projects">
-
-            <a href="project.html">
-                View All Projects →
             </a>
 
-        </div>
+        </section>
 
 
-    </div>
-
-</section>
+    </main>
 
 
 
-<!-- =====================================================
-     CONTACT SECTION
-===================================================== -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-<section class="contact-section">
+    <footer class="simple-footer">
 
-
-    <div class="contact-container">
-
-
-        <h2>
-            Contact
-        </h2>
-
-
-        <p class="contact-intro">
-
-            I'm currently looking to join a
-            cross-functional team that values creativity,
-            learning and improving people's digital
-            experiences. Have a project in mind?
-            Let's connect.
-
+        <p>
+            © 2026 Sneha Dhakal. All rights reserved.
         </p>
 
+        <p>
+            Designed and developed by Sneha Dhakal
+        </p>
 
-        <a href="mailto:sneha.20261028@nami.edu.np"
-           class="email">
-
-            sneha.20261018@nami.edu.np
-
-        </a>
+    </footer>
 
 
-        <div class="social-links">
-
-
-            <a href="https://www.instagram.com/itssnehalyn/"
-               aria-label="Instagram">
-
-                ◎
-
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/sneha-dhakal-ba21b6401/"
-               aria-label="LinkedIn">
-
-                in
-
-            </a>
-
-
-            <a href=""
-               aria-label="GitHub">
-
-                G
-
-            </a>
-
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <p>
-
-        © 2026 Sneha Dhakal |
-        Computer Science Student & Web Developer
-
-    </p>
-
-</footer>
-
-
-
-<!-- =====================================================
-     MENU JAVASCRIPT
-===================================================== -->
-
-<script>
-
-function openMenu() {
-
-    document
-        .getElementById("sideMenu")
-        .classList.add("active");
-
-}
-
-
-function closeMenu() {
-
-    document
-        .getElementById("sideMenu")
-        .classList.remove("active");
-
-}
-
-</script>
+</div>
 
 
 </body>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,455 +8,693 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Blog by Sneha Dhakal about web development, portfolio development and technology">
+    <title>Blog — Sneha</title>
 
-    <title>Blog | Sneha Dhakal</title>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="stylesheet" href="file.css">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=Inter:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="file.css">
 
 </head>
 
 
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
-<header class="navbar">
-
-    <a href="index.html" class="logo">
-    SD
-</a>
+<div class="bg"></div>
 
 
-    <button class="menu-button"
-            onclick="openMenu()"
-            aria-label="Open menu">
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-    </button>
-
-</header>
+<div class="page">
 
 
+    <!-- HEADER -->
 
-<!-- =====================================================
-     SIDE MENU
-===================================================== -->
+    <header>
 
-<nav class="side-menu" id="sideMenu">
+        <a class="nav-mark"
+           href="index.html">
 
-    <button class="close-button"
-            onclick="closeMenu()"
-            aria-label="Close menu">
+            S<span>·</span>D
 
-        &times;
-
-    </button>
+        </a>
 
 
-    <div class="menu-links">
+        <nav aria-label="Primary">
 
-        <a href="index.html">Home</a>
+            <ul>
 
-        <a href="blog.html">Blog</a>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-        <a href="project.html">Projects</a>
+                <li>
+                    <a href="project.html">
+                        Projects
+                    </a>
+                </li>
 
-        <a href="skills.html">Skills</a>
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
 
-        <a href="contact.html">Contact</a>
+                <li>
+                    <a href="blog.html"
+                       aria-current="page">
+                        Blog
+                    </a>
+                </li>
 
-        <a href="sitereport.html">Site Report</a>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
 
-    </div>
+                <li>
+                    <a href="sitereport.html">
+                        Site Report
+                    </a>
+                </li>
 
-</nav>
+            </ul>
 
+        </nav>
 
-
-<main>
-
-
-<!-- =====================================================
-     BLOG HEADER
-===================================================== -->
-
-<section class="blog-header">
-
-    <p class="blog-label">
-        MY BLOG
-    </p>
-
-    <h1>
-        My Web Development Journey
-    </h1>
-
-    <p>
-        A collection of my experiences, learning process,
-        challenges and progress while developing my portfolio website.
-    </p>
-
-</section>
-
-
-
-<!-- =====================================================
-     VIDEO SECTION
-===================================================== -->
-
-<section class="blog-video">
-
-    <p class="blog-label">
-        VIDEO DEMONSTRATION
-    </p>
-
-    <h2>
-        Building My Portfolio Website
-    </h2>
-
-    <p>
-        This video demonstrates my portfolio website and
-        shows the different pages, layouts and features
-        that I developed using HTML and CSS.
-    </p>
+    </header>
 
 
-    <div class="video-container">
+    <!-- MAIN -->
 
-        <iframe
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-            title="Sneha Dhakal Portfolio Website Demonstration"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-
-    </div>
-
-</section>
+    <main class="blog-page">
 
 
+        <!-- INTRO -->
 
-<!-- =====================================================
-     BLOG ARTICLE
-===================================================== -->
+        <section class="blog-intro">
 
-<article class="blog-article">
+            <p class="eyebrow">
+                My Web Development Journey
+            </p>
 
+            <h1>
+                Building My Portfolio Website
+            </h1>
 
-    <!-- BLOG IMAGE -->
+            <p>
+                A visual and written explanation of how I designed,
+                developed and improved my personal portfolio website.
+            </p>
 
-    <figure class="blog-image">
-
-        <img src="images/blog1.jpg"
-             alt="Web development workspace">
-
-        <figcaption>
-    My web development workspace while planning and developing
-    the portfolio website.
-</figcaption>
-
-    </figure>
+        </section>
 
 
+        <!-- BLOG CONTENT -->
 
-    <!-- BLOG CONTENT -->
+        <article class="blog-post">
 
-    <div class="blog-content">
 
-        <p class="blog-date">
-            15 August 2026
+            <p class="post-meta">
+                Sneha Dhakal · CSY1063 · 2026
+            </p>
+
+
+            <!-- =====================================
+                 INTRODUCTION
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    01. Introduction
+                </h2>
+
+               
+                
+
+                <p>
+                    This portfolio website was created as part of my web
+                    development learning journey. The main purpose of the
+                    website is to introduce myself as a Computer Science
+                    student and present my skills, education, projects and
+                    learning experiences in one place.
+                </p>
+
+                <p>
+                    I wanted the website to be simple, professional and easy
+                    to navigate. Rather than using excessive animations or
+                    complicated visual elements, I focused on readable content,
+                    consistent spacing, clear navigation and a simple colour
+                    scheme.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 HOME PAGE
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    02. Home Page
+                </h2>
+
+                <img src="images/blog1.png"
+                     alt="Sneha portfolio home page"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Home page introducing me and my portfolio.
+                </p>
+
+                <p>
+                    The Home page is the first page visitors see when they
+                    open my website. I designed this page to provide a quick
+                    introduction and encourage visitors to explore the rest
+                    of the portfolio.
+                </p>
+
+                <p>
+                    The page contains my name, a short introduction, my
+                    profile photograph and links to other important sections.
+                    The profile image makes the website more personal and
+                    helps visitors connect the portfolio with me.
+                </p>
+
+                <p>
+                    I kept the introduction short because the purpose of the
+                    Home page is to give visitors an overview rather than
+                    provide every detail immediately.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 ABOUT ME
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    03. About Me
+                </h2>
+
+                <img src="images/blog2.png"
+                     alt="About Me section of portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    About Me section explaining my background and interests.
+                </p>
+
+                <p>
+                    The About Me section gives visitors more information
+                    about who I am. It explains my background as a Computer
+                    Science student and my interest in technology and web
+                    development.
+                </p>
+
+                <p>
+                    I wanted this section to feel personal rather than looking
+                    like a CV. Therefore, I used simple paragraphs to explain
+                    my interests, learning journey and goals.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 SKILLS
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    04. Skills Page
+                </h2>
+
+                <img src="images/blog3.png"
+                     alt="Skills page of portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Skills page showing my technical and soft skills.
+                </p>
+
+                <p>
+                    The Skills page presents the abilities I have developed
+                    through my studies and practical work. My technical
+                    knowledge includes HTML, CSS, Python, SQL and basic
+                    JavaScript.
+                </p>
+
+                <p>
+                    I also included soft skills such as communication,
+                    teamwork, problem solving, creativity, time management
+                    and adaptability.
+                </p>
+
+                <p>
+                    Instead of using large skill cards or progress bars,
+                    I chose a simple layout because I wanted the information
+                    to be clear and easy to read.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 EDUCATION
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    05. Education
+                </h2>
+
+                <img src="images/blog4.png"
+                     alt="Education section of portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Education section showing my academic background.
+                </p>
+
+                <p>
+                    The Education section presents my academic background.
+                    It includes my current BSc (Hons) Computer Science degree
+                    as well as my previous Grade 12 and Grade 10 education.
+                </p>
+
+                <p>
+                    Including education on the portfolio gives visitors
+                    additional context about my current level of study and
+                    the academic foundation behind my technical skills.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 PROJECTS
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    06. Projects Page
+                </h2>
+
+                <img src="images/blog5.png"
+                     alt="Projects page of portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Projects page displaying my practical work.
+                </p>
+
+                <p>
+                    The Projects page is one of the most important sections
+                    of my portfolio because it demonstrates how I apply the
+                    knowledge I have learned.
+                </p>
+
+                <p>
+                    Instead of only listing project names, I provide
+                    information about what each project is, what I worked on
+                    and what skills were involved.
+                </p>
+
+                <p>
+                    This section will continue to grow as I complete more
+                    university and personal projects.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 BLOG
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    07. Blog Page
+                </h2>
+
+                <img src="images/blog6.png"
+                     alt="Blog page of portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Blog page documenting my web development journey.
+                </p>
+
+                <p>
+                    The Blog page is used to document my learning experience.
+                    It allows me to explain the development process rather
+                    than only showing the final result.
+                </p>
+
+                <p>
+                    I can use this section to discuss problems I faced,
+                    solutions I discovered, new technologies I learned and
+                    improvements I made to the website.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 CONTACT
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    08. Contact Page
+                </h2>
+
+                <img src="images/contact-page.png"
+                     alt="Contact page of portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Contact page providing a way for visitors to reach me.
+                </p>
+
+                <p>
+                    The Contact page provides visitors with a simple way to
+                    communicate with me. It contains my contact information
+                    and a basic contact form.
+                </p>
+
+                <p>
+                    I kept this page simple so that visitors can quickly find
+                    the information they need without being distracted by
+                    unnecessary elements.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 SITE REPORT
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    09. Site Report
+                </h2>
+
+                <img src="images/site-report.png"
+                     alt="Site Report page of portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Site Report documenting the development of my website.
+                </p>
+
+                <p>
+                    The Site Report explains the development process in more
+                    detail. It describes my design decisions, technologies,
+                    challenges and improvements.
+                </p>
+
+                <p>
+                    This section is also useful for reflecting on the work I
+                    completed and identifying areas where I can improve my
+                    development skills.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 DESIGN
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    10. Design Decisions
+                </h2>
+
+                <img src="images/design.png"
+                     alt="Portfolio website design"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Simple visual design used throughout the portfolio.
+                </p>
+
+                <p>
+                    I selected a black background as the main colour because
+                    it gives the website a clean and modern appearance.
+                    White and grey are used for readable text, while orange
+                    is used as an accent colour.
+                </p>
+
+                <p>
+                    I deliberately avoided excessive cards, icons and
+                    animations. My aim was to create a website that looks
+                    like a genuine student portfolio rather than a
+                    pre-designed template.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 TECHNOLOGIES
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    11. Technologies Used
+                </h2>
+
+                <img src="images/code.png"
+                     alt="HTML and CSS code used for the portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    HTML and CSS code used to develop the website.
+                </p>
+
+                <p>
+                    HTML was used to create the structure of the website.
+                    I used semantic elements such as header, nav, main,
+                    section, article, footer, headings, paragraphs,
+                    lists, tables, forms and images.
+                </p>
+
+                <p>
+                    CSS was used to control the visual appearance of the
+                    website. I used CSS for layout, typography, colours,
+                    spacing, navigation, buttons and responsive design.
+                </p>
+
+                <p>
+                    Flexbox and CSS Grid were also used to arrange different
+                    sections of the website and make the layout more flexible.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 CHALLENGES
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    12. Challenges I Faced
+                </h2>
+
+                <img src="images/debugging.png"
+                     alt="Debugging website code"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Testing and debugging the website during development.
+                </p>
+
+                <p>
+                    One of the main challenges was controlling the layout.
+                    Sometimes elements became too large, moved to the wrong
+                    position or looked different from what I expected.
+                </p>
+
+                <p>
+                    I also faced problems with images not displaying.
+                    This helped me understand the importance of correct file
+                    paths, filenames and file extensions.
+                </p>
+
+                <p>
+                    Another challenge was making the website look simple
+                    without making it appear empty. I gradually improved the
+                    spacing, typography and content to find a balance between
+                    simplicity and useful information.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 LEARNING
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    13. What I Learned
+                </h2>
+
+                <img src="images/learning.png"
+                     alt="Learning web development"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    My progress while learning web development.
+                </p>
+
+                <p>
+                    This project improved my understanding of HTML, CSS,
+                    Flexbox, Grid, responsive design and website structure.
+                </p>
+
+                <p>
+                    I also learned that debugging is an important part of
+                    development. Finding and fixing mistakes helped me
+                    understand the code instead of simply copying solutions.
+                </p>
+
+                <p>
+                    Most importantly, I learned that a good website should
+                    focus on usability and clear communication as well as
+                    appearance.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 FUTURE
+            ====================================== -->
+
+            <section class="blog-section">
+
+                <h2>
+                    14. Future Improvements
+                </h2>
+
+                <img src="images/future.png"
+                     alt="Future improvements for portfolio"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Areas I would like to improve in the future.
+                </p>
+
+                <p>
+                    This portfolio is still a work in progress. In the future,
+                    I would like to add more projects and improve my knowledge
+                    of JavaScript and database technologies.
+                </p>
+
+                <p>
+                    I would also like to make the contact form fully
+                    functional, improve accessibility, add better responsive
+                    behaviour and continue refining the design as my skills
+                    develop.
+                </p>
+
+            </section>
+
+
+            <!-- CONCLUSION -->
+
+            <section class="blog-section">
+
+                <h2>
+                    15. Conclusion
+                </h2>
+
+                <img src="images/final-portfolio.png"
+                     alt="Final portfolio website"
+                     class="blog-section-image">
+
+                <p class="image-caption">
+                    Final version of my portfolio website.
+                </p>
+
+                <p>
+                    Creating this portfolio has been an important part of my
+                    web development journey. It allowed me to combine the
+                    concepts I learned in class and apply them to a complete
+                    website.
+                </p>
+
+                <p>
+                    The website represents my current knowledge, creativity
+                    and progress as a Computer Science student. As I continue
+                    learning, I expect both my skills and this portfolio to
+                    improve.
+                </p>
+
+            </section>
+
+
+        </article>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p class="status">
+            © 2026 Sneha Dhakal. All rights reserved.
         </p>
 
+        <div class="socials">
 
-        <h2>
-            My Journey Into Web Development
-        </h2>
+            <a href="contact.html">
+                Contact
+            </a>
 
+            <a href="sitereport.html">
+                Site Report
+            </a>
 
-        <p>
-    Web development is an area of computer science that I have
-    become increasingly interested in during my studies. When I
-    first started learning about websites, I was curious about
-    how a webpage could be created using code and how HTML, CSS
-    and JavaScript work together to create an interactive website.
-    Developing this portfolio gave me an opportunity to apply
-    these concepts to a complete multi-page website rather than
-    studying them only as individual topics.
-</p>
+        </div>
 
+    </footer>
 
-        <p>
 
-            I began my portfolio project by planning the different
-            pages and deciding how information should be organised.
-            My portfolio includes a Home page, Skills page, Projects
-            page, Blog page, Contact page and Site Report.
-
-        </p>
-
-
-        <!-- SECOND IMAGE -->
-
-        <figure class="blog-image small-image">
-
-            <img src="images/blog2.jpeg"
-                 alt="HTML and CSS code">
-
-            <figcaption>
-                HTML provides structure while CSS controls presentation.
-            </figcaption>
-
-        </figure>
-
-
-        <h3>
-            Learning HTML and CSS
-        </h3>
-
-
-        <p>
-
-            I started with <strong>HTML</strong>, which helped me
-            understand the basic structure of a webpage. I learned
-            how headings, paragraphs, links, images, lists and
-            semantic elements are used to organise information.
-
-        </p>
-
-
-        <p>
-
-            After learning HTML, I started using <strong>CSS</strong>
-            to improve the appearance of my webpages. I experimented
-            with colours, fonts, spacing, borders and different
-            layouts to create a consistent design.
-
-        </p>
-
-
-        <!-- THIRD IMAGE -->
-
-        <figure class="blog-image small-image">
-
-            <img src="images/blog3.png"
-                 alt="Responsive website design">
-
-            <figcaption>
-                Responsive design allows websites to work on different screen sizes.
-            </figcaption>
-
-        </figure>
-
-
-        <h3>
-            Designing My Portfolio
-        </h3>
-
-
-        <p>
-
-            Designing my portfolio helped me understand how
-            different elements work together. I wanted the website
-            to have a simple and professional appearance while
-            still showing my personality as a computer science student.
-
-        </p>
-
-
-        <p>
-    I used a consistent colour scheme, typography, navigation
-    system and spacing across the pages. I chose these elements
-    deliberately so that users could recognise the same visual
-    structure throughout the website. I also created a side
-    navigation menu to provide access to all pages while keeping
-    the main interface visually simple.
-</p>
-
-<p>
-    I was also influenced by the portfolio design of Brittany
-    Chiang, particularly its use of typography, spacing and
-    navigation. I used these ideas as inspiration but adapted
-    them to create my own visual design and layout rather than
-    copying the original website (Chiang, n.d.).
-</p>
-
-
-        <h3>
-            Why Responsive Design Matters
-        </h3>
-
-
-        <p>
-
-            Modern websites are viewed on desktop computers,
-tablets and mobile phones. Because of this, a website
-should be easy to use regardless of the screen size.
-Responsive web design allows layouts to adapt to different
-devices and screen sizes (MDN Web Docs, n.d.).
-        </p>
-
-
-        <p>
-
-            I used responsive CSS and media queries to make
-            my portfolio adapt to different screen sizes.
-            Testing the website on smaller screens helped me
-            identify and fix layout problems.
-
-        </p>
-
-
-        <h3>
-            Challenges I Faced
-        </h3>
-
-
-        <p>
-
-            During development, I experienced several challenges.
-            Some of these included positioning images correctly,
-            maintaining consistent spacing and making the layout
-            responsive.
-
-        </p>
-
-
-        <p>
-
-           One of the most useful lessons was learning that a small CSS
-    change can affect several parts of a webpage. At first, I
-    sometimes changed multiple properties without knowing which
-    property caused the problem. Through debugging with browser
-    developer tools, I became more systematic by identifying the
-    element, checking its CSS rules and testing one change at a
-    time. This made my development process more efficient and
-    increased my confidence in solving layout problems independently.
-
-        </p>
-
-
-        <h3>
-            What I Have Learned
-        </h3>
-
-
-        <p>
-
-            Building my portfolio has taught me that good web
-            development is not only about writing code. A successful
-            website should also be accessible, organised, visually
-            appealing and easy to navigate.
-
-        </p>
-
-
-       <p>
-    Testing also changed the way I approached development. I used
-    browser developer tools to check layouts at different screen
-    sizes and used HTML and CSS validation to identify errors.
-    This showed me that a website should not only look good but
-    should also have valid structure, usable navigation and
-    accessible content.
-</p>
-
-<p>
-    I have also gained experience with Git and GitHub,
-    which helped me manage and save different versions
-    of my project during development.
-</p>
-
-
-    </div>
-
-</article>
-
-
-
-<!-- =====================================================
-     BLOG CONCLUSION
-===================================================== -->
-
-<section class="blog-conclusion">
-
-    <h2>
-        Final Thoughts
-    </h2>
-
-    <p>
-
-        Learning web development has been a challenging but
-        enjoyable experience. From creating my first HTML page
-        to developing a complete portfolio, I have gained a
-        better understanding of how websites are planned,
-        designed, developed and tested.
-
-    </p>
-
-    <p>
-
-        I am still developing my skills, but every project gives
-        me an opportunity to learn something new. My goal is to
-        continue improving my knowledge of web development and
-        create more advanced and interactive websites in the future.
-
-    </p>
-
-</section>
-
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <p>
-        © 2026 Sneha Dhakal |
-        Computer Science Student & Web Developer
-    </p>
-
-</footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script>
-
-function openMenu() {
-
-    document
-        .getElementById("sideMenu")
-        .classList.add("active");
-
-}
-
-
-function closeMenu() {
-
-    document
-        .getElementById("sideMenu")
-        .classList.remove("active");
-
-}
-
-</script>
-
+</div>
 
 </body>
 
 </html>
-```
