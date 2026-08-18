@@ -6,14 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="Sneha Dhakal's projects and web development work.">
+
     <title>Projects — Sneha</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=Inter:wght@400;500&display=swap"
           rel="stylesheet">
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="file.css">
 
 </head>
@@ -26,15 +31,15 @@
 <div class="page">
 
 
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
 
     <header>
 
-        <a class="nav-mark" href="index.html">
+        <a class="nav-mark" href="index.html" aria-label="Sneha Dhakal Home">
             S<span>·</span>D
         </a>
 
-        <nav aria-label="Primary">
+        <nav aria-label="Primary navigation">
 
             <ul>
 
@@ -45,7 +50,7 @@
                 </li>
 
                 <li>
-                    <a href="projects.html" aria-current="page">
+                    <a href="project.html" aria-current="page">
                         Projects
                     </a>
                 </li>
@@ -81,12 +86,12 @@
     </header>
 
 
-    <!-- MAIN -->
+    <!-- ================= MAIN ================= -->
 
     <main class="projects-page">
 
 
-        <!-- INTRO -->
+        <!-- PROJECT INTRO -->
 
         <section class="projects-intro">
 
@@ -99,266 +104,223 @@
             </h1>
 
             <p>
-                A selection of projects and practical work I have
-                created while learning programming, web development
-                and different areas of technology.
+                A selection of projects and practical work I have created
+                while learning programming, web development and technology.
             </p>
 
         </section>
 
 
-       <section class="project-list">
+        <!-- ================= PROJECT GRID ================= -->
 
-    <!-- PROJECT 01 -->
-    <article class="project-item">
-        <div class="project-image">
-            <img src="images/Climate Clarity.png" alt="Climate Clarity Project">
-        </div>
-
-        <span class="project-no">01</span>
-
-        <div class="project-content">
-            <h2>Climate Clarity</h2>
-
-           <p>
-        Climate Clarity is an AI-powered climate information platform designed
-        to make complex climate reports easier for people in Nepal to
-        understand and use. The platform addresses the problem of technical
-        climate information being difficult for ordinary citizens to access
-        and understand.
-    </p>
-
-    <p>
-        Climate Clarity uses AI to transform lengthy climate reports into
-        simple visual summaries and understandable insights. It provides
-        information at a local level through an interactive map covering all
-        77 districts of Nepal, helping users explore climate-related
-        information relevant to their communities.
-    </p>
-
-    <h3>Key Features</h3>
-
-    <ul>
-        <li>AI-powered climate report summarisation</li>
-        <li>Interactive map covering Nepal's 77 districts</li>
-        <li>Climate transparency scorecards</li>
-        <li>Bilingual voice audio explanations</li>
-        <li>Climate promise and commitment tracker</li>
-        <li>Simple visual summaries of complex climate data</li>
-    </ul>
-
-    <p>
-        The main goal of Climate Clarity is to make climate information more
-        accessible, transparent, and useful for everyone. By converting
-        complicated reports into clear summaries, maps, visual data, and
-        audio explanations, the platform helps citizens understand climate
-        risks and become more informed about climate action in Nepal.
-    </p>
-
-   
-
-            <small>HTML · CSS · AI</small>
-        </div>
-    </article>
+        <section class="project-grid"
+                 aria-label="My projects">
 
 
-    <!-- PROJECT 02 -->
-    <article class="project-item">
-        <div class="project-image">
-            <img src="images/ProtfolioProject.png" alt="Personal Portfolio">
-        </div>
+            <!-- PROJECT 01 -->
 
-        <span class="project-no">02</span>
+            <article class="project-card">
 
-        <div class="project-content">
-            
-    <h2>Personal Portfolio Website</h2>
+                <div class="project-image">
 
-    <p>
-        My Personal Portfolio Website is a responsive website created to
-        introduce myself, showcase my skills, projects, and learning
-        experience as a Computer Science student. The website provides
-        information about my background and gives visitors an overview of
-        my interests and development journey.
-    </p>
+                    <img src="images/climate-clarity.png"
+                         alt="Screenshot of Climate Clarity project">
 
-    <p>
-        I developed the portfolio using HTML and CSS, focusing on creating
-        a clean, simple, and user-friendly design. The website includes
-        multiple pages that allow visitors to easily navigate through my
-        work and learn more about me.
-    </p>
+                </div>
 
-    <h3>Website Features</h3>
+                <div class="project-card-content">
 
-    <ul>
-        <li>Home page with a personal introduction</li>
-        <li>Skills page showcasing my technical and personal skills</li>
-        <li>Projects page displaying my academic and personal projects</li>
-        <li>Blog page for sharing my learning experiences</li>
-        <li>Contact page with contact information and a form</li>
-        <li>Site Report describing my web development process</li>
-        <li>Responsive layout for different screen sizes</li>
-        <li>Simple and accessible navigation</li>
-    </ul>
+                    <span class="project-no">
+                        01
+                    </span>
 
-    <p>
-        The main purpose of this portfolio is to present my abilities,
-        development work, and progress in web development. It also provides
-        a professional online space where I can continue adding new projects
-        and skills as I develop my career in technology.
-    </p>
+                    <h2>
+                        Climate Clarity
+                    </h2>
 
-    <p>
-        <strong>Technologies Used:</strong> HTML5, CSS3 and GitHub.
-    </p>
+                    <p>
+                        Climate Clarity is an AI-powered climate information
+                        platform designed to make complex climate reports
+                        easier for people in Nepal to understand and use.
+                    </p>
+
+                    <p>
+                        The platform transforms lengthy climate information
+                        into simple summaries, visual data and local climate
+                        information through an interactive map covering all
+                        77 districts of Nepal.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>AI</span>
+                        <span>Data Visualisation</span>
+
+                    </div>
+
+                </div>
+
+            </article>
 
 
-            <small>HTML · CSS · Git</small>
-        </div>
-    </article>
+            <!-- PROJECT 02 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="images/ProtfolioProject.png"
+                         alt="Screenshot of Personal Portfolio Website">
+
+                </div>
+
+                <div class="project-card-content">
+
+                    <span class="project-no">
+                        02
+                    </span>
+
+                    <h2>
+                        Personal Portfolio Website
+                    </h2>
+
+                    <p>
+                        My Personal Portfolio Website is a responsive website
+                        created to introduce myself and showcase my skills,
+                        projects and learning experience as a Computer Science
+                        student.
+                    </p>
+
+                    <p>
+                        I developed the website using HTML and CSS, focusing
+                        on a clean, simple and user-friendly design with
+                        multiple pages and clear navigation.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive Design</span>
+
+                    </div>
+
+                </div>
+
+            </article>
 
 
-    <!-- PROJECT 03 -->
-    <article class="project-item">
-        <div class="project-image">
-            <img src="images/RescueMS.png" alt="Rescue MS Project">
-        </div>
+            <!-- PROJECT 03 -->
 
-        <span class="project-no">03</span>
+            <article class="project-card">
 
-        <div class="project-content">
-           
-    <h2>RescueMS-Zoo Management System</h2>
+                <div class="project-image">
 
-    <p>
-        RescueMS is a web-based Zoo Management System designed to improve
-        the management of animals, visitors, memberships, sponsorships,
-        events, and other zoo activities. The system provides a central
-        platform where zoo staff can manage important information efficiently
-        while visitors can access services and information more easily.
-    </p>
+                    <img src="images/RescueMS.png"
+                         alt="Screenshot of RescueMS Zoo Management System">
 
-    <p>
-        The project focuses on creating an organised and user-friendly
-        digital experience for both zoo administrators and visitors. It
-        includes different features for managing animal records, memberships,
-        sponsorships, bookings, events, and educational content.
-    </p>
+                </div>
 
-    <h3>Key Features</h3>
+                <div class="project-card-content">
 
-    <ul>
-        <li>Animal management and animal records</li>
-        <li>Membership registration and renewal</li>
-        <li>Animal sponsorship programmes</li>
-        <li>Visitor booking and event management</li>
-        <li>Admin login and role-based access</li>
-        <li>Virtual zoo tour</li>
-        <li>Educational learning resources</li>
-        <li>Visitor-friendly information and services</li>
-    </ul>
+                    <span class="project-no">
+                        03
+                    </span>
 
-    <p>
-        The main goal of RescueMS is to make zoo management more organised,
-        efficient, and accessible. By bringing different zoo services into
-        one digital system, the project can help staff manage information
-        effectively while providing visitors with a better online experience.
-    </p>
+                    <h2>
+                        RescueMS — Zoo Management System
+                    </h2>
 
-    <p>
-        <strong>Project Role:</strong> Interface Design
-    </p>
+                    <p>
+                        RescueMS is a web-based Zoo Management System designed
+                        to improve the management of animals, visitors,
+                        memberships, sponsorships, events and zoo activities.
+                    </p>
 
-    <p>
-        <strong>Technologies and Concepts:</strong> UI/UX Design, Web
-        Development, System Analysis, Database Design, and Role-Based Access.
-    </p>
+                    <p>
+                        The system provides an organised digital platform for
+                        zoo staff while making services and information easier
+                        for visitors to access.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>UI/UX</span>
+                        <span>System Design</span>
+
+                    </div>
+
+                </div>
+
+            </article>
 
 
-            <small>Figma · Database · System Design</small>
-        </div>
-    </article>
+            <!-- PROJECT 04 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="images/Aura.png"
+                         alt="Screenshot of Aura Study learning platform">
+
+                </div>
+
+                <div class="project-card-content">
+
+                    <span class="project-no">
+                        04
+                    </span>
+
+                    <h2>
+                        Aura Study
+                    </h2>
+
+                    <p>
+                        Aura Study is a digital learning platform designed
+                        to provide students with a simple and engaging
+                        environment for studying and accessing learning
+                        resources.
+                    </p>
+
+                    <p>
+                        The project explores how web technology and interface
+                        design can be combined to organise educational
+                        information and create a convenient learning experience.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>UI Design</span>
+                        <span>Education</span>
+
+                    </div>
+
+                </div>
+
+            </article>
 
 
-    <!-- PROJECT 04 -->
-    <article class="project-item">
-        <div class="project-image">
-            <img src="images/Aura.png" alt="Academic Projects">
-        </div>
-
-        <span class="project-no">04</span>
-
-        <div class="project-content">
-            
-    <h2>Aura Study</h2>
-
-    <p>
-        Aura Study is a digital learning platform designed to provide
-        students with a simple and engaging environment for studying,
-        accessing learning resources, and improving their academic
-        experience. The project focuses on creating an organised and
-        user-friendly interface where students can easily find and use
-        educational content.
-    </p>
-
-    <p>
-        The main purpose of Aura Study is to make learning more accessible
-        through a clean digital platform. It demonstrates how web technology
-        can be used to organise educational information and create a more
-        convenient learning experience for students.
-    </p>
-
-    <h3>Key Features</h3>
-
-    <ul>
-        <li>Student-friendly learning interface</li>
-        <li>Organised educational resources</li>
-        <li>Simple and easy navigation</li>
-        <li>Accessible study materials</li>
-        <li>Clean and responsive user interface</li>
-        <li>Designed to support independent learning</li>
-    </ul>
-
-    <p>
-        Through this project, I explored how user interface design and web
-        development can be combined to create a useful educational platform.
-        Aura Study also helped me improve my understanding of designing
-        websites with students and usability in mind.
-    </p>
-
-    <p>
-        <strong>Technologies Used:</strong> HTML5, CSS3 and Web Development.
-    </p>
+        </section>
 
 
-            <small>Python · SQL · Programming</small>
-        </div>
-    </article>
-
-</section>
-            </main>
+    </main>
 
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
         <p class="status">
-            system nominal — built and maintained by Sneha
+            © 2026 Sneha Dhakal. All Rights Reserved.
+            | Designed &amp; Developed by Sneha Dhakal
         </p>
-
-        <div class="socials">
-
-            <a href="contact.html">
-                Contact
-            </a>
-
-            <a href="sitereport.html">
-                Site Report
-            </a>
-
-        </div>
 
     </footer>
 
