@@ -13,9 +13,7 @@
 
     <title>Site Report — Sneha Dhakal</title>
 
-
     <!-- Google Fonts -->
-
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
 
@@ -26,9 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=Inter:wght@400;500&display=swap"
           rel="stylesheet">
 
-
     <!-- Main CSS -->
-
     <link rel="stylesheet"
           href="file.css">
 
@@ -37,9 +33,7 @@
 
 <body>
 
-
 <div class="bg"></div>
-
 
 <div class="page">
 
@@ -50,58 +44,27 @@
 
     <header>
 
-        <a class="nav-mark"
-           href="index.html"
-           aria-label="Sneha Dhakal Home">
+        <div class="nav-mark">
+            S<span>.D</span>
+        </div>
 
-            S<span>·</span>D
+        <input type="checkbox"
+               id="menu-toggle"
+               class="menu-checkbox">
 
-        </a>
+        <label for="menu-toggle" class="menu-button">
+    ☰
+</label>
 
-
-        <nav aria-label="Primary navigation">
-
+        <nav>
             <ul>
-
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="project.html">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a href="skills.html">
-                        Skills
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-                <li>
-                    <a href="sitereport.html"
-                       aria-current="page">
-                        Site Report
-                    </a>
-                </li>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="site-report.html">Site Report</a></li>
             </ul>
-
         </nav>
 
     </header>
@@ -116,25 +79,25 @@
         <section class="report-page"
                  aria-labelledby="report-heading">
 
-
-            <!-- REPORT TITLE -->
-
             <p class="eyebrow">
                 REFLECTIVE DEVELOPMENT LOG — CSY1063
             </p>
-
 
             <h1 id="report-heading">
                 Site Report
             </h1>
 
 
-            <article class="report-content">
+            <!-- =================================================
+                 REPORT CONTENT
+            ================================================== -->
+
+            <div class="report-content">
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      01 — INTRODUCTION
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -159,9 +122,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      02 — STARTING THE PROJECT
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -176,21 +139,21 @@
                         Report. One of the first important lessons was
                         understanding semantic HTML. Instead of using generic
                         containers for everything, I used elements such as
-                        header, nav, main, section, article, footer, form and
-                        label to give the website a meaningful structure. I
-                        also learned how links, images, forms and alternative
-                        text contribute to a functional and accessible
-                        website. This gave me a stronger understanding of how
-                        the structure of a webpage is created before styling
-                        is applied.
+                        header, nav, main, section, footer, form and label to
+                        give the website a meaningful structure. I also
+                        learned how links, images, forms and alternative text
+                        contribute to a functional and accessible website.
+                        This gave me a stronger understanding of how the
+                        structure of a webpage is created before styling is
+                        applied.
                     </p>
 
                 </section>
 
 
-                <!-- =====================================================
-                     03 — DEVELOPMENT OVER THE TERM
-                ====================================================== -->
+                <!-- =================================================
+                     03 — DEVELOPMENT
+                ================================================== -->
 
                 <section>
 
@@ -220,9 +183,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      04 — DESIGN DECISIONS
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -280,9 +243,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      05 — UPS AND DOWNS
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -321,9 +284,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      06 — CODING AND DEBUGGING
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -350,9 +313,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      07 — RESPONSIVE DESIGN
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -388,9 +351,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      08 — VALIDATION AND TESTING
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -419,19 +382,40 @@
                         before finalising the portfolio.
                     </p>
 
+                    <h3>
+                        HTML and CSS Validation Evidence
+                    </h3>
 
-                    <!-- VALIDATION EVIDENCE -->
+                    <p>
+                        To ensure that my portfolio follows appropriate web
+                        development standards, I validated all six HTML pages
+                        using the W3C Markup Validation Service. I also
+                        validated the shared CSS stylesheet using the W3C CSS
+                        Validation Service. The validation process helped me
+                        identify and correct structural, markup and styling
+                        issues before final submission.
+                    </p>
+
+                    <p>
+                        The screenshots below provide evidence of the
+                        validation results for each HTML page and the shared
+                        CSS stylesheet.
+                    </p>
+
+
+                    <h3>
+                        HTML Validation Results
+                    </h3>
 
                     <div class="validation-shots">
 
-
                         <figure class="shot">
 
-                            <img src="images/html-validation.png"
-                                 alt="HTML validation results for the portfolio website">
+                            <img src="images/validation-index.png"
+                                 alt="W3C HTML validation result for the Home page">
 
                             <figcaption>
-                                HTML validation result
+                                Figure 1: Home page HTML validation
                             </figcaption>
 
                         </figure>
@@ -439,24 +423,91 @@
 
                         <figure class="shot">
 
-                            <img src="images/css-validation.png"
-                                 alt="CSS validation results for the portfolio website">
+                            <img src="images/validation-project.png"
+                                 alt="W3C HTML validation result for the Projects page">
 
                             <figcaption>
-                                CSS validation result
+                                Figure 2: Projects page HTML validation
                             </figcaption>
 
                         </figure>
 
+
+                        <figure class="shot">
+
+                            <img src="images/validation-skills.png"
+                                 alt="W3C HTML validation result for the Skills page">
+
+                            <figcaption>
+                                Figure 3: Skills page HTML validation
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="shot">
+
+                            <img src="images/validation-blog.png"
+                                 alt="W3C HTML validation result for the Blog page">
+
+                            <figcaption>
+                                Figure 4: Blog page HTML validation
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="shot">
+
+                            <img src="images/validation-contact.png"
+                                 alt="W3C HTML validation result for the Contact page">
+
+                            <figcaption>
+                                Figure 5: Contact page HTML validation
+                            </figcaption>
+
+                        </figure>
+
+
+                        <figure class="shot">
+
+                            <img src="images/validation-sitereport.png"
+                                 alt="W3C HTML validation result for the Site Report page">
+
+                            <figcaption>
+                                Figure 6: Site Report HTML validation
+                            </figcaption>
+
+                        </figure>
+
+                    </div>
+
+
+                    <h3>
+                        CSS Validation Result
+                    </h3>
+
+                    <div class="validation-shots">
+
+                        <figure class="shot">
+
+                            <img src="images/validation-css.png"
+                                 alt="W3C CSS validation result for the portfolio stylesheet">
+
+                            <figcaption>
+                                Figure 7: Shared CSS stylesheet validation
+                            </figcaption>
+
+                        </figure>
 
                     </div>
 
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      09 — VIDEO DEMONSTRATION
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -471,28 +522,19 @@
                         development decisions made during the project.
                     </p>
 
-
-                    <!--
-                         IMPORTANT:
-                         Replace the placeholder below with your
-                         actual YouTube video URL before submission.
-                    -->
-
                     <a class="video-link"
-                       href="YOUR_ACTUAL_YOUTUBE_LINK"
+                       href="https://youtu.be/xuR6hgql08Y?si=OCxaZwUusdnu9_Lv"
                        target="_blank"
                        rel="noopener noreferrer">
-
                         Watch My Portfolio Demonstration
-
                     </a>
 
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      10 — REFLECTIVE DISCUSSION
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -537,9 +579,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      11 — AI ACKNOWLEDGEMENT
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -565,9 +607,9 @@
                 </section>
 
 
-                <!-- =====================================================
+                <!-- =================================================
                      12 — REFERENCES
-                ====================================================== -->
+                ================================================== -->
 
                 <section>
 
@@ -575,156 +617,104 @@
                         References
                     </h2>
 
-
                     <ul class="references">
 
-
-                        <!-- GOOGLE FONTS -->
-
                         <li>
-
-                            Google Fonts (2026)
+                            Google Fonts (2026).
                             <em>Google Fonts</em>.
-
                             Available at:
-
                             <a href="https://fonts.google.com/"
                                target="_blank"
                                rel="noopener noreferrer">
                                 https://fonts.google.com/
                             </a>
-
                             (Accessed: 18 August 2026).
-
                         </li>
 
 
-                        <!-- MDN -->
-
                         <li>
-
-                            Mozilla Developer Network (MDN) (2026)
+                            Mozilla Developer Network (MDN) (2026).
                             <em>CSS: Cascading Style Sheets</em>.
-
                             Available at:
-
                             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                                target="_blank"
                                rel="noopener noreferrer">
                                 https://developer.mozilla.org/en-US/docs/Web/CSS
                             </a>
-
                             (Accessed: 18 August 2026).
-
                         </li>
 
 
-                        <!-- W3C HTML -->
-
                         <li>
-
-                            World Wide Web Consortium (W3C) (2026)
+                            World Wide Web Consortium (W3C) (2026).
                             <em>Markup Validation Service</em>.
-
                             Available at:
-
                             <a href="https://validator.w3.org/"
                                target="_blank"
                                rel="noopener noreferrer">
                                 https://validator.w3.org/
                             </a>
-
                             (Accessed: 18 August 2026).
-
                         </li>
 
 
-                        <!-- W3C CSS -->
-
                         <li>
-
-                            World Wide Web Consortium (W3C) (2026)
+                            World Wide Web Consortium (W3C) (2026).
                             <em>CSS Validation Service</em>.
-
                             Available at:
-
                             <a href="https://jigsaw.w3.org/css-validator/"
                                target="_blank"
                                rel="noopener noreferrer">
                                 https://jigsaw.w3.org/css-validator/
                             </a>
-
                             (Accessed: 18 August 2026).
-
                         </li>
 
 
-                        <!-- AWWWARDS -->
-
                         <li>
-
-                            Awwwards (2026)
+                            Awwwards (2026).
                             <em>Awwwards — Website Awards</em>.
-
                             Available at:
-
                             <a href="https://www.awwwards.com/"
                                target="_blank"
                                rel="noopener noreferrer">
                                 https://www.awwwards.com/
                             </a>
-
                             (Accessed: 18 August 2026).
-
                         </li>
 
 
-                        <!-- BEHANCE -->
-
                         <li>
-
-                            Behance (2026)
+                            Behance (2026).
                             <em>Behance</em>.
-
                             Available at:
-
                             <a href="https://www.behance.net/"
                                target="_blank"
                                rel="noopener noreferrer">
                                 https://www.behance.net/
                             </a>
-
                             (Accessed: 18 August 2026).
-
                         </li>
 
 
-                        <!-- OPENAI -->
-
                         <li>
-
-                            OpenAI (2026)
+                            OpenAI (2026).
                             <em>ChatGPT</em>.
-
                             Available at:
-
                             <a href="https://chatgpt.com/"
                                target="_blank"
                                rel="noopener noreferrer">
                                 https://chatgpt.com/
                             </a>
-
                             (Accessed: 18 August 2026).
-
                         </li>
-
 
                     </ul>
 
                 </section>
 
 
-            </article>
+            </div>
 
         </section>
 
@@ -738,15 +728,13 @@
     <footer>
 
         <p class="status">
-            © 2026 Sneha Dhakal. All Rights Reserved.
-            | Designed &amp; Developed by Sneha Dhakal
+            © 2026 Sneha Dhakal. All Rights Reserved. | Designed & Developed by Sneha Dhakal
         </p>
 
     </footer>
 
 
 </div>
-
 
 </body>
 
